@@ -2301,7 +2301,7 @@ sendEphemeral: false,
 },mentionedJid:[stod]}, quoted : ftrol})
 }
 break
-case 'sosis':
+case 'Promo':
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
         if(menusimpel == false){               
                 const timestampi = speed();
@@ -2632,6 +2632,7 @@ runtime = process.uptime()
 *Cashpb*:: List Harga Cash PB💰
 *Ff* : List Harga Diamond Free Fire💎
 ====================
+*Promo* : List Promo 💎
 *Pay* : Nomer Untuk Tf💵
 *Botwa* :List Harga Bot Wa,Jasa Run Bot🚀
 *Qriss* : Kode Qris📌
