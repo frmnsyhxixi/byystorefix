@@ -2301,80 +2301,6 @@ sendEphemeral: false,
 },mentionedJid:[stod]}, quoted : ftrol})
 }
 break
-case 'Promo':
-  if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
-        if(menusimpel == false){               
-                const timestampi = speed();
-					const latensyi = speed() - timestampi                
-runtime = process.uptime()
-                nomor = 1
-                stod = `${sender}`
-       stst = await kurr.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-       menu = ` ─ *PROMO* ─
-
-PROMO DM MLBB PAKET A*
-*VIA ID & SERVER*
-*PROSES 1 - 15 MENIT*
-
-172💎 Rp. 36.900
-257💎 Rp. 56.300
-344💎 Rp. 75.500
-429💎 Rp. 93.000
-514💎 Rp. 110.000
-600💎 Rp. 130.500
-706💎 Rp. 149.000
-1050💎 Rp. 221.000
-1412💎 Rp. 292.000
-=================
-532💎 Rp. 107.000
-1446💎 Rp. 295.000
-2700💎 Rp. 510.000
-===================
-*Format Order Diamond Promo"
-*Nick* : 
-*Id* :
-*Server* :
-Sisa DM :
-Jumlah Dm Yang Dibeli :
-Metode Pembayaran : 
-
-
-`
-sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`allmenu`,buttonText:{displayText:'ALL MENU'},type:1},{buttonId:`rules`,buttonText:{displayText:'RULES'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
-}
-else if(menusimpel = true){
-        stod = `${sender}`
-fill =`Hai Kak ${pushname}, ${tampilUcapan}
-Silahkan Pilih Untuk Menampilkan Menu
-
-Jika Button Tidak Muncul Ketik .allmenu`
-menu =` ${NamaBot}`
-gbutsan = [
-{buttonId:`allmenu`,buttonText:{displayText:'SHOW MENU'},type:1},
-{buttonId:`store`,buttonText:{displayText:'STORE MENU'},type:1},
-{buttonId:`script`,buttonText:{displayText:'SC'},type:1}
-]
-mhan = await kurr.prepareMessage(from, ofrply, image, {thumbnail: ofrply})
-const btnmenu = {
-imageMessage: mhan.message.imageMessage,
-contentText: `${fill}`,
-footerText: `${menu}`,
-buttons: gbutsan,
-headerType: 4
-}
-kurr.sendMessage(from, btnmenu, MessageType.buttonsMessage, {contextInfo :{text: 'hi',
-"forwardingScore": 1000000000,
-isForwarded: false,
-sendEphemeral: false,
-"externalAdReply": {
-"title": `hallo ${pushname}` ,
-"body": `${jmn} - ${week} ${weton} - ${calender}`,
-"mediaType": "2",
-"thumbnail": pporigi,
-},mentionedJid:[stod]}, quoted : ftrol})
-}
-break
 case 'cashpb':
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
         if(menusimpel == false){               
@@ -2564,7 +2490,76 @@ sendEphemeral: false,
 },mentionedJid:[stod]}, quoted : ftrol})
 }
 break
-case 'Netflix':
+case 'promo':
+  if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
+        if(menusimpel == false){               
+                const timestampi = speed();
+					const latensyi = speed() - timestampi                
+runtime = process.uptime()
+                nomor = 1
+                stod = `${sender}`
+       stst = await kurr.getStatus(`${sender.split('@')[0]}@c.us`)
+				stst = stst.status == 401 ? '' : stst.status
+       menu = ` *PROMO DM MLBB PAKET A*
+*VIA ID & SERVER*
+*PROSES 1 - 15 MENIT*
+
+172💎 Rp. 36.900
+257💎 Rp. 56.300
+344💎 Rp. 75.500
+429💎 Rp. 93.000
+514💎 Rp. 110.000
+600💎 Rp. 130.500
+706💎 Rp. 149.000
+1050💎 Rp. 221.000
+1412💎 Rp. 292.000
+=================
+532💎 Rp. 107.000
+1446💎 Rp. 295.000
+2700💎 Rp. 510.000
+===================
+Format Order Promo MLBB Paket A
+Id :
+Server :
+NICK :
+Sisa DM :
+Metode Pembayaran :
+`
+sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`allmenu`,buttonText:{displayText:'ALL MENU'},type:1},{buttonId:`rules`,buttonText:{displayText:'RULES'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+}
+else if(menusimpel = true){
+        stod = `${sender}`
+fill =`Hai Kak ${pushname}, ${tampilUcapan}
+Silahkan Pilih Untuk Menampilkan Menu
+
+Jika Button Tidak Muncul Ketik .allmenu`
+menu =` ${NamaBot}`
+gbutsan = [
+{buttonId:`allmenu`,buttonText:{displayText:'SHOW MENU'},type:1},
+{buttonId:`store`,buttonText:{displayText:'STORE MENU'},type:1},
+{buttonId:`script`,buttonText:{displayText:'SC'},type:1}
+]
+mhan = await kurr.prepareMessage(from, ofrply, image, {thumbnail: ofrply})
+const btnmenu = {
+imageMessage: mhan.message.imageMessage,
+contentText: `${fill}`,
+footerText: `${menu}`,
+buttons: gbutsan,
+headerType: 4
+}
+kurr.sendMessage(from, btnmenu, MessageType.buttonsMessage, {contextInfo :{text: 'hi',
+"forwardingScore": 1000000000,
+isForwarded: false,
+sendEphemeral: false,
+"externalAdReply": {
+"title": `hallo ${pushname}` ,
+"body": `${jmn} - ${week} ${weton} - ${calender}`,
+"mediaType": "2",
+"thumbnail": pporigi,
+},mentionedJid:[stod]}, quoted : ftrol})
+}
+break
+case 'netflix':
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
         if(menusimpel == false){               
                 const timestampi = speed();
@@ -2628,7 +2623,6 @@ sendEphemeral: false,
 },mentionedJid:[stod]}, quoted : ftrol})
 }
 break
-
 case 'qriss':
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
         if(menusimpel == false){               
@@ -2696,7 +2690,10 @@ runtime = process.uptime()
 *Sosis* : List Harga Candy Sausage Man🍬
 *Cashpb*:: List Harga Cash PB💰
 *Ff* : List Harga Diamond Free Fire💎
-====================
+*Neflix* : Akun Netflix PREMIUM 🎮
+*Rdp* : List Harga rdp💻
+*Sosmed* : List Harga Kebutuhan Sosmed 👾
+========================
 *Promo* : List Promo 💎
 *Pay* : Nomer Untuk Tf💵
 *Botwa* :List Harga Bot Wa,Jasa Run Bot🚀
@@ -2705,6 +2702,138 @@ runtime = process.uptime()
 =======================
 *Oiya Jangan Lupa Kasih Prefix Bang*
 Contoh = .menu
+
+`
+sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`allmenu`,buttonText:{displayText:'ALL MENU'},type:1},{buttonId:`rules`,buttonText:{displayText:'RULES'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+}
+else if(menusimpel = true){
+        stod = `${sender}`
+fill =`Hai Kak ${pushname}, ${tampilUcapan}
+Silahkan Pilih Untuk Menampilkan Menu
+
+Jika Button Tidak Muncul Ketik .allmenu`
+menu =` ${NamaBot}`
+gbutsan = [
+{buttonId:`allmenu`,buttonText:{displayText:'SHOW MENU'},type:1},
+{buttonId:`store`,buttonText:{displayText:'STORE MENU'},type:1},
+{buttonId:`script`,buttonText:{displayText:'SC'},type:1}
+]
+mhan = await kurr.prepareMessage(from, ofrply, image, {thumbnail: ofrply})
+const btnmenu = {
+imageMessage: mhan.message.imageMessage,
+contentText: `${fill}`,
+footerText: `${menu}`,
+buttons: gbutsan,
+headerType: 4
+}
+kurr.sendMessage(from, btnmenu, MessageType.buttonsMessage, {contextInfo :{text: 'hi',
+"forwardingScore": 1000000000,
+isForwarded: false,
+sendEphemeral: false,
+"externalAdReply": {
+"title": `hallo ${pushname}` ,
+"body": `${jmn} - ${week} ${weton} - ${calender}`,
+"mediaType": "2",
+"thumbnail": pporigi,
+},mentionedJid:[stod]}, quoted : ftrol})
+}
+break
+case 'sosmed':
+  if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
+        if(menusimpel == false){               
+                const timestampi = speed();
+					const latensyi = speed() - timestampi                
+runtime = process.uptime()
+                nomor = 1
+                stod = `${sender}`
+       stst = await kurr.getStatus(`${sender.split('@')[0]}@c.us`)
+				stst = stst.status == 401 ? '' : stst.status
+       menu = ` *° = Tiktok = °*
+
+• Tiktok View
+- 1M View 35rb
+- 5M View 155rb
+( FYP )
+
+• Tiktok Like
+- 1K Like 15rb
+- 5K Like 60rb
+
+• Tiktok Share
+- 1K Share 40Rb
+( REAL )
+- 1K SHARE 50Rb
+( INDONESIA KEMUNGKINAN FYP KALO ORDER BNYK )
+ 
+•  Tiktok Followers
+- 1K Followers 20rb
+( GARANSI 30 HARI ) 
+*SLOW 1-8 HARI KELAR*
+
+*° = Instagram = °*
+
+• Folls pasif Instagram
+
+*< BOT >*
+- 1K Folls 8.000 
+( HIGH DROP 90-100% NO GARANSI )
+
+- 1K Folls 15rb
+- 10K Folls 105rb
+- 100K Folls 830rb
+( TIDAK DROP GARANSI 90 HARI )
+
+• Likes Pasif Instagram
+- 1K Likes 13.000
+(Less drop) 
+- 1K Likes 15.000
+( No Guaranteed ) 
+
+• Folls Instagram Real Aktif / Indo
+- 1K Followers 40.000
+- 5K Followers 200.000
+- 10K Followers 345.000
+( Real indo statistic )
+ 
+• Folls GA Instagram Real Indo
+- 10K Followers 330.000
+- 15K Followers 465.000
+- 50K+ Followers 620.000
+- 70K Followers 125.000
+- 100K Followers 1.850.000
+Note : Jasa Promote IG anda untuk menaikan Followers Indonesia 100% Murni VIA TAG ARTIS
+
+• Instagram Live Stream
+- 100 View 20rb
+
+*° = YouToube = °*
+
+• Yt Likes
+- 100 Like 9.500
+- 500 Like 25.000
+- 1K Like 35.500
+
+• Yt Live Stream
+- 1K View 30rb
+- 1K View 40rb
+( BEDA HARGA BEDA KUALLITAS , ORDER BANYAK BONUS )
+ 
+• Yt Jam Tayang 
+- 1K Jam - 115.000
+( No Guaranteed ) 
+- 1K Jam - 170.000
+( 30D Guaranteed KALO DROP )
+( BONUS VIEW )
+
+*° = TELEGRAM = °*
+
+• TELEGRAM Member
+- 1K Member 25RB
+- 1K Member 30RB
+( NO GARANSI )
+
+Guaranted : * Garansi *
+JIKA DROP DAN STATUS GARANSI , MAKA AKAN DI ISI ULANG.
 
 `
 sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`allmenu`,buttonText:{displayText:'ALL MENU'},type:1},{buttonId:`rules`,buttonText:{displayText:'RULES'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
@@ -2801,7 +2930,7 @@ sendEphemeral: false,
 },mentionedJid:[stod]}, quoted : ftrol})
 }
 break
-case 'vpsrdp':
+case 'rdp':
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
         if(menusimpel == false){               
                 const timestampi = speed();
@@ -2840,11 +2969,6 @@ Kebijakan penggunaan:
 - Dilarang menggunakan untuk CHR Mikrotik  
 - Tidak melanggar AUP.
 - Jika melanggar maka garansi hangus  
-- Syarat Klaim Garansi Anda Wajib Review Bintang 5 Produk kami  
-- Garansi RDP drop kami ganti selama masa garansi.  
-- Barang selalu ready stock. 
-- Siap menerima pesanan RDP dalam jumlah banyak dengan harga SPECIAL. 
-- Pesanan akan diproses maksimal 1x24, bisa lebih cepat. 
 - Masa Aktif RDP  dapat di perpanjang (h-1 dicek teknisi)
 - Full Administrator. 
 - Os tersedia Windows Server 2012/2016/2019 | Linux (Ubuntu, Centos, Debian) 
