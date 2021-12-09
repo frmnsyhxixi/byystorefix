@@ -2564,6 +2564,71 @@ sendEphemeral: false,
 },mentionedJid:[stod]}, quoted : ftrol})
 }
 break
+case 'Netflix':
+  if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
+        if(menusimpel == false){               
+                const timestampi = speed();
+					const latensyi = speed() - timestampi                
+runtime = process.uptime()
+                nomor = 1
+                stod = `${sender}`
+       stst = await kurr.getStatus(`${sender.split('@')[0]}@c.us`)
+				stst = stst.status == 401 ? '' : stst.status
+       menu = ` Netflix Shared (1 Profile) : Rp. 35.000/Bulan
+
+✅ Streaming Ultra HD
+✅ 100% Legal dan safe
+✅ 1 Device (1 Screen)
+✅ Bisa Download dan nonton offline
+✅ Bisa di gunakan di Smart TV, Handphone, Laptop, PS4, IPad, Tablet, Xbox dan lainny
+✅ GARANSI ON
+
+Syarat & Ketentuan :
+⛔ Dilarang Ganti Email dan password
+⛔ Dilarang Jail / Mengutak atik
+⛔ Dilarang Menjual kembali akun yang kami berikan
+⛔ Dilarang berpindah perangkat, Shared itu hanya untuk 1 Perangkat/Device
+
+Melanggar tidak dapat garansi!
+
+*TERIMA KASIH*
+
+`
+sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`allmenu`,buttonText:{displayText:'ALL MENU'},type:1},{buttonId:`rules`,buttonText:{displayText:'RULES'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+}
+else if(menusimpel = true){
+        stod = `${sender}`
+fill =`Hai Kak ${pushname}, ${tampilUcapan}
+Silahkan Pilih Untuk Menampilkan Menu
+
+Jika Button Tidak Muncul Ketik .allmenu`
+menu =` ${NamaBot}`
+gbutsan = [
+{buttonId:`allmenu`,buttonText:{displayText:'SHOW MENU'},type:1},
+{buttonId:`store`,buttonText:{displayText:'STORE MENU'},type:1},
+{buttonId:`script`,buttonText:{displayText:'SC'},type:1}
+]
+mhan = await kurr.prepareMessage(from, ofrply, image, {thumbnail: ofrply})
+const btnmenu = {
+imageMessage: mhan.message.imageMessage,
+contentText: `${fill}`,
+footerText: `${menu}`,
+buttons: gbutsan,
+headerType: 4
+}
+kurr.sendMessage(from, btnmenu, MessageType.buttonsMessage, {contextInfo :{text: 'hi',
+"forwardingScore": 1000000000,
+isForwarded: false,
+sendEphemeral: false,
+"externalAdReply": {
+"title": `hallo ${pushname}` ,
+"body": `${jmn} - ${week} ${weton} - ${calender}`,
+"mediaType": "2",
+"thumbnail": pporigi,
+},mentionedJid:[stod]}, quoted : ftrol})
+}
+break
+
 case 'qriss':
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
         if(menusimpel == false){               
@@ -2700,6 +2765,119 @@ runtime = process.uptime()
 *1 MINGGU*  : 7K
 *1 BULAN* : 25
 *PERMANEN* : 30K
+
+`
+sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`allmenu`,buttonText:{displayText:'ALL MENU'},type:1},{buttonId:`rules`,buttonText:{displayText:'RULES'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+}
+else if(menusimpel = true){
+        stod = `${sender}`
+fill =`Hai Kak ${pushname}, ${tampilUcapan}
+Silahkan Pilih Untuk Menampilkan Menu
+
+Jika Button Tidak Muncul Ketik .allmenu`
+menu =` ${NamaBot}`
+gbutsan = [
+{buttonId:`allmenu`,buttonText:{displayText:'SHOW MENU'},type:1},
+{buttonId:`store`,buttonText:{displayText:'STORE MENU'},type:1},
+{buttonId:`script`,buttonText:{displayText:'SC'},type:1}
+]
+mhan = await kurr.prepareMessage(from, ofrply, image, {thumbnail: ofrply})
+const btnmenu = {
+imageMessage: mhan.message.imageMessage,
+contentText: `${fill}`,
+footerText: `${menu}`,
+buttons: gbutsan,
+headerType: 4
+}
+kurr.sendMessage(from, btnmenu, MessageType.buttonsMessage, {contextInfo :{text: 'hi',
+"forwardingScore": 1000000000,
+isForwarded: false,
+sendEphemeral: false,
+"externalAdReply": {
+"title": `hallo ${pushname}` ,
+"body": `${jmn} - ${week} ${weton} - ${calender}`,
+"mediaType": "2",
+"thumbnail": pporigi,
+},mentionedJid:[stod]}, quoted : ftrol})
+}
+break
+case 'vpsrdp':
+  if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
+        if(menusimpel == false){               
+                const timestampi = speed();
+					const latensyi = speed() - timestampi                
+runtime = process.uptime()
+                nomor = 1
+                stod = `${sender}`
+       stst = await kurr.getStatus(`${sender.split('@')[0]}@c.us`)
+				stst = stst.status == 401 ? '' : stst.status
+       menu = ` _*ByyStore RDP & VPS*_
+       
+*LIST HARGA RDP BYY STORE*
+=====================
+*1GB Ram 1 Core 25SSD* : 30K
+*2GB Ram 1 Core 55SSD* : 41K
+*4GB Ram 2 Core 80SSD* : 72K
+
+Wajib di baca sebelum membeli :
+
+PROVIDER : Vultr, Linode, Digital Ocean
+
+Langsung Order saja, barang selalu ready gan !
+pesanan akan langsung dikerjakan.
+proses paling lama 1x24 jam biasanya 1 jam kurang sudah dikirim.
+
+Kebijakan penggunaan:
+- Support Botting (view youtube jam tayang, flash sale, dsb)  
+- Support xampp  
+- Sekarang tidak support Mining (update)
+- support  download upload dfile  
+- support Bot Trading Dll  
+- Dilarang Pengunaan CPU Diatas 90 Persen Selama 12 Jam lebih  
+- Dilarang Menggunakan Emulator (Nox, Memu, Bluestack, Dsb)  
+- Dilarang Menggunakan untuk kriminal (dorking, hacking, carding, bruteforce, ddos)  
+- Dilarang torrent , AFK game (Luna game/Lunatic). 
+- Dilarang menggunakan untuk CHR Mikrotik  
+- Tidak melanggar AUP.
+- Jika melanggar maka garansi hangus  
+- Syarat Klaim Garansi Anda Wajib Review Bintang 5 Produk kami  
+- Garansi RDP drop kami ganti selama masa garansi.  
+- Barang selalu ready stock. 
+- Siap menerima pesanan RDP dalam jumlah banyak dengan harga SPECIAL. 
+- Pesanan akan diproses maksimal 1x24, bisa lebih cepat. 
+- Masa Aktif RDP  dapat di perpanjang (h-1 dicek teknisi)
+- Full Administrator. 
+- Os tersedia Windows Server 2012/2016/2019 | Linux (Ubuntu, Centos, Debian) 
+
+Spesifikasi :
+
+- 4 GB RAM
+- 2 CORE CPU Intel Xeon 2,6GHZ  
+- 80 GB SSD
+- Speed Internet : Up to 1 GBPS
+- Provider : Vultr/Linode/Digital Ocean
+- Garansi/berlaku : 1 bln, 2 bln, 5 bln
+
+- 2 GB RAM
+- 2 CORE CPU Intel Xeon 2,6GHZ  
+- 45 GB SSD
+- Speed Internet : Up to  1 GBPS
+- Provider : Digital Ocean
+- Garansi/berlaku : 1 bln, 2 bln, 5 bln
+
+- 2 GB RAM
+- 1 CORE CPU Intel Xeon 2,6GHZ  
+- 55 GB SSD
+- Speed Internet : Up to  500 MBPS
+- Provider : Vultr/Linode/Digital Ocean
+- Garansi/berlaku : 1 bln, 2 bln, 5 bln, 10 bln.
+
+- 1 GB RAM
+- 1 CORE CPU Intel Xeon 2,6GHZ  
+- 25 GB SSD
+- Speed Internet : Up to 300 MBPS
+- Provider : Vultr/Linode/Digital Ocean
+- Garansi/berlaku : 1 bln, 2 bln, 5 bln, 10 bln, 12 bln
 
 `
 sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`allmenu`,buttonText:{displayText:'ALL MENU'},type:1},{buttonId:`rules`,buttonText:{displayText:'RULES'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
