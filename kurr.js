@@ -2512,8 +2512,6 @@ Metode Pembayaran :
 
 *Kesalahan Pengisian Data Bukan Tanggung Jawab Admin*
 *Happy Shopping*
-🤖🤖🤖🤖
-
 `
 sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`allmenu`,buttonText:{displayText:'ALL MENU'},type:1},{buttonId:`rules`,buttonText:{displayText:'RULES'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 }
@@ -2549,7 +2547,7 @@ sendEphemeral: false,
 },mentionedJid:[stod]}, quoted : ftrol})
 }
 break
-case 'Mlpo':
+case 'mlpo':
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
         if(menusimpel == false){               
                 const timestampi = speed();
@@ -2559,9 +2557,8 @@ runtime = process.uptime()
                 stod = `${sender}`
        stst = await kurr.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
-       menu = ` *BENTAR YA BOS CEK DULU*
-       *KALAU GAK BALES LAGI BERARTI KOSONG*
-
+       menu = ` *SABAR YA BOS,KALAU BOT BALES LAGI BERARTI ADA PO*
+       *KALO GABALES YA GADA PO*
 `
 sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`allmenu`,buttonText:{displayText:'ALL MENU'},type:1},{buttonId:`rules`,buttonText:{displayText:'RULES'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 }
