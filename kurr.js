@@ -6021,14 +6021,14 @@ break
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return sticAdmin(from)
                    if (!isBotGroupAdmins) return sticNotAdmin(from)
-                   reply(`Sukses membuka grup ${groupName}`)
+                   reply(`OPEN GASS ORDERR 👊💎 ${groupName}`)
 						kurr.groupSettingChange(from, GroupSettingChange.messageSend, false)
 						break
 						case 'closegc':
 						if (!isGroup) return reply(mess.only.group)
 						if (!isGroupAdmins) return sticAdmin(from)
                    if (!isBotGroupAdmins) return sticNotAdmin(from)
-						reply(`Sukses menutup grup ${groupName}`)
+						reply(`*TERIMAKASIH YANG SUDAH ORDER SEMOGA TETAP DILIMPAHKAN REJEKI YANG CUKUP* 😇 ${groupName}`)
 						kurr.groupSettingChange(from, GroupSettingChange.messageSend, true)
 					break
 				case 'spam':
