@@ -7408,17 +7408,7 @@ Link : ${get_resultP.url_audio}
                 reply(`Sukses mengganti nama ke ${body.slice(9)}`)
                 break                
              case 'add':
-             if (mek.message.extendedTextMessage === null || mek.message.extendedTextMessage === undefined) {
-             entah = arg.split("|")[0]
-             entah = entah.replace(new RegExp("[()+-/ +/]", "gi"), "")
-             entah = `${entah}@s.whatsapp.net`
-             kurr.groupAdd(from, [entah])
-             } else {
-             entah = mek.message.extendedTextMessage.contextInfo.participant
-             kurr.groupAdd(from, [entah])
-}
-reply('*SELAMAT DATANG DI GRUP BYY STORE*')
-reply('*UNTUK MENAMPILKAN MENU KETIK .List*')
+             reply(`*Punya Tangan Kan kontol? Kalo Punya Ya Dipake Anjengg*`)
              break
 	
 				case 'kick':
