@@ -2492,7 +2492,7 @@ sendEphemeral: false,
 },mentionedJid:[stod]}, quoted : ftrol})
 }
 break
-case 'Format':
+case 'Formatorder':
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
         if(menusimpel == false){               
                 const timestampi = speed();
@@ -2509,10 +2509,12 @@ Server :
 Nama Akun :
 Sisa Dm :
 Metode Pembayaran :
+============================
+*Format Menu Lain Tanya Admin*
 
-*Kesalahan Pengisian Data Bukan Tanggung Jawab Admin*
-*Happy Shopping*
-
+*Note*
+Kesalahan Pengisian Data Bukan Tanggung Jawab Admin
+Happy Shopping
 `
 sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`allmenu`,buttonText:{displayText:'TANYA DOANG'},type:1},{buttonId:`rules`,buttonText:{displayText:'KAGAK BELI -_-'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 }
@@ -2776,10 +2778,10 @@ runtime = process.uptime()
 *Rdp* : List Harga rdp💻
 *Sosmed* : List Harga Kebutuhan Sosmed 👾
 ========================
-*reedemml* : Kode Reedem ML💎
+*Reedemml* : Kode Reedem ML💎
 *Mlpo* : List PO ML 💎
 *Promo* : List Promo 💎
-*Format* : Cek Format Beli ✅
+*Formatorder* : Cek Format Beli ✅
 *Pay* : Nomer Untuk Tf💵
 *Botwa* :List Harga Bot Wa,Jasa Run Bot🚀
 *Qriss* : Kode Qris📌
@@ -2823,7 +2825,7 @@ sendEphemeral: false,
 },mentionedJid:[stod]}, quoted : ftrol})
 }
 break
-case 'list':
+case 'Reedemml':
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
         if(menusimpel == false){               
                 const timestampi = speed();
