@@ -2492,64 +2492,7 @@ sendEphemeral: false,
 },mentionedJid:[stod]}, quoted : ftrol})
 }
 break
-case 'Formatorder':
-  if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
-        if(menusimpel == false){               
-                const timestampi = speed();
-					const latensyi = speed() - timestampi                
-runtime = process.uptime()
-                nomor = 1
-                stod = `${sender}`
-       stst = await kurr.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-       menu = ` _*Format ORDER BYYSTORE*_
 
-Id : 
-Server : 
-Nama Akun :
-Sisa Dm :
-Metode Pembayaran :
-============================
-*Format Menu Lain Tanya Admin*
-
-*Note*
-Kesalahan Pengisian Data Bukan Tanggung Jawab Admin
-Happy Shopping
-`
-sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`allmenu`,buttonText:{displayText:'TANYA DOANG'},type:1},{buttonId:`rules`,buttonText:{displayText:'KAGAK BELI -_-'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
-}
-else if(menusimpel = true){
-        stod = `${sender}`
-fill =`Hai Kak ${pushname}, ${tampilUcapan}
-Silahkan Pilih Untuk Menampilkan Menu
-
-Jika Button Tidak Muncul Ketik .allmenu`
-menu =` ${NamaBot}`
-gbutsan = [
-{buttonId:`allmenu`,buttonText:{displayText:'SHOW MENU'},type:1},
-{buttonId:`store`,buttonText:{displayText:'STORE MENU'},type:1},
-{buttonId:`script`,buttonText:{displayText:'SC'},type:1}
-]
-mhan = await kurr.prepareMessage(from, ofrply, image, {thumbnail: ofrply})
-const btnmenu = {
-imageMessage: mhan.message.imageMessage,
-contentText: `${fill}`,
-footerText: `${menu}`,
-buttons: gbutsan,
-headerType: 4
-}
-kurr.sendMessage(from, btnmenu, MessageType.buttonsMessage, {contextInfo :{text: 'hi',
-"forwardingScore": 1000000000,
-isForwarded: false,
-sendEphemeral: false,
-"externalAdReply": {
-"title": `hallo ${pushname}` ,
-"body": `${jmn} - ${week} ${weton} - ${calender}`,
-"mediaType": "2",
-"thumbnail": pporigi,
-},mentionedJid:[stod]}, quoted : ftrol})
-}
-break
 case 'mlpo':
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
         if(menusimpel == false){               
@@ -2608,6 +2551,110 @@ runtime = process.uptime()
        stst = await kurr.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
        menu = ` *KALAU BOT BALES LAGI BERARTI ADA PROMO*
+`
+sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`allmenu`,buttonText:{displayText:'ALL MENU'},type:1},{buttonId:`rules`,buttonText:{displayText:'RULES'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+}
+else if(menusimpel = true){
+        stod = `${sender}`
+fill =`Hai Kak ${pushname}, ${tampilUcapan}
+Silahkan Pilih Untuk Menampilkan Menu
+
+Jika Button Tidak Muncul Ketik .allmenu`
+menu =` ${NamaBot}`
+gbutsan = [
+{buttonId:`allmenu`,buttonText:{displayText:'SHOW MENU'},type:1},
+{buttonId:`store`,buttonText:{displayText:'STORE MENU'},type:1},
+{buttonId:`script`,buttonText:{displayText:'SC'},type:1}
+]
+mhan = await kurr.prepareMessage(from, ofrply, image, {thumbnail: ofrply})
+const btnmenu = {
+imageMessage: mhan.message.imageMessage,
+contentText: `${fill}`,
+footerText: `${menu}`,
+buttons: gbutsan,
+headerType: 4
+}
+kurr.sendMessage(from, btnmenu, MessageType.buttonsMessage, {contextInfo :{text: 'hi',
+"forwardingScore": 1000000000,
+isForwarded: false,
+sendEphemeral: false,
+"externalAdReply": {
+"title": `hallo ${pushname}` ,
+"body": `${jmn} - ${week} ${weton} - ${calender}`,
+"mediaType": "2",
+"thumbnail": pporigi,
+},mentionedJid:[stod]}, quoted : ftrol})
+}
+break
+case 'format':
+  if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
+        if(menusimpel == false){               
+                const timestampi = speed();
+					const latensyi = speed() - timestampi                
+runtime = process.uptime()
+                nomor = 1
+                stod = `${sender}`
+       stst = await kurr.getStatus(`${sender.split('@')[0]}@c.us`)
+				stst = stst.status == 401 ? '' : stst.status
+       menu = ` *Format Order Byy Store*
+
+Format Order Diamond / Candy
+Nama Akun :
+Id :
+Server : 
+Menu Yang Dipilih :
+
+==========================
+Format Lainnya Tanya admin
+*Note*
+Salah Pengisian Data Bukan Tanggung Jawab Admin*
+
+`
+sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`allmenu`,buttonText:{displayText:'ALL MENU'},type:1},{buttonId:`rules`,buttonText:{displayText:'RULES'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+}
+else if(menusimpel = true){
+        stod = `${sender}`
+fill =`Hai Kak ${pushname}, ${tampilUcapan}
+Silahkan Pilih Untuk Menampilkan Menu
+
+Jika Button Tidak Muncul Ketik .allmenu`
+menu =` ${NamaBot}`
+gbutsan = [
+{buttonId:`allmenu`,buttonText:{displayText:'SHOW MENU'},type:1},
+{buttonId:`store`,buttonText:{displayText:'STORE MENU'},type:1},
+{buttonId:`script`,buttonText:{displayText:'SC'},type:1}
+]
+mhan = await kurr.prepareMessage(from, ofrply, image, {thumbnail: ofrply})
+const btnmenu = {
+imageMessage: mhan.message.imageMessage,
+contentText: `${fill}`,
+footerText: `${menu}`,
+buttons: gbutsan,
+headerType: 4
+}
+kurr.sendMessage(from, btnmenu, MessageType.buttonsMessage, {contextInfo :{text: 'hi',
+"forwardingScore": 1000000000,
+isForwarded: false,
+sendEphemeral: false,
+"externalAdReply": {
+"title": `hallo ${pushname}` ,
+"body": `${jmn} - ${week} ${weton} - ${calender}`,
+"mediaType": "2",
+"thumbnail": pporigi,
+},mentionedJid:[stod]}, quoted : ftrol})
+}
+break
+case 'reedemml':
+  if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
+        if(menusimpel == false){               
+                const timestampi = speed();
+					const latensyi = speed() - timestampi                
+runtime = process.uptime()
+                nomor = 1
+                stod = `${sender}`
+       stst = await kurr.getStatus(`${sender.split('@')[0]}@c.us`)
+				stst = stst.status == 401 ? '' : stst.status
+       menu = ` *KALAU BOT BALES LAGI BERARTI ADA KODE REEDEM*
 `
 sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`allmenu`,buttonText:{displayText:'ALL MENU'},type:1},{buttonId:`rules`,buttonText:{displayText:'RULES'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 }
@@ -2778,10 +2825,10 @@ runtime = process.uptime()
 *Rdp* : List Harga rdp💻
 *Sosmed* : List Harga Kebutuhan Sosmed 👾
 ========================
-*Reedemml* : Kode Reedem ML💎
+*reedemml* : Kode Reedem ML💎
 *Mlpo* : List PO ML 💎
 *Promo* : List Promo 💎
-*Formatorder* : Cek Format Beli ✅
+*Format* : Cek Format Beli ✅
 *Pay* : Nomer Untuk Tf💵
 *Botwa* :List Harga Bot Wa,Jasa Run Bot🚀
 *Qriss* : Kode Qris📌
@@ -2825,7 +2872,7 @@ sendEphemeral: false,
 },mentionedJid:[stod]}, quoted : ftrol})
 }
 break
-case 'Reedemml':
+case 'list':
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
         if(menusimpel == false){               
                 const timestampi = speed();
