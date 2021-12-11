@@ -2512,8 +2512,9 @@ Metode Pembayaran :
 
 *Kesalahan Pengisian Data Bukan Tanggung Jawab Admin*
 *Happy Shopping*
+
 `
-sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`allmenu`,buttonText:{displayText:'ALL MENU'},type:1},{buttonId:`rules`,buttonText:{displayText:'RULES'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`allmenu`,buttonText:{displayText:'TANYA DOANG'},type:1},{buttonId:`rules`,buttonText:{displayText:'KAGAK BELI -_-'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 }
 else if(menusimpel = true){
         stod = `${sender}`
@@ -2604,37 +2605,7 @@ runtime = process.uptime()
                 stod = `${sender}`
        stst = await kurr.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
-       menu = ` *PROMO DM MLBB PAKET A*
-*VIA ID & SERVER*
-*PROSES 1 - 15 MENIT*
-
-172💎 Rp. 36.900
-257💎 Rp. 56.300
-344💎 Rp. 75.500
-429💎 Rp. 93.000
-514💎 Rp. 110.000
-600💎 Rp. 130.500
-706💎 Rp. 149.000
-1050💎 Rp. 221.000
-1412💎 Rp. 292.000
-2195💎 Rp. 438.000
-3688💎 Rp. 730.000
-5532💎 Rp. 1.090.000
-6238💎 Rp. 1.240.000
-9288💎 Rp. 1.815.000
-=================
-266💎 Rp. 54.000
-305💎 Rp. 65.000
-532💎 Rp. 108.000
-1446💎 Rp. 295.000
-2700💎 Rp. 512.000
-===================
-Format Order Promo MLBB Paket A
-Id :
-Server :
-NICK :
-Sisa DM :
-Metode Pembayaran :
+       menu = ` *KALAU BOT BALES LAGI BERARTI ADA PROMO*
 `
 sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`allmenu`,buttonText:{displayText:'ALL MENU'},type:1},{buttonId:`rules`,buttonText:{displayText:'RULES'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 }
@@ -2805,6 +2776,7 @@ runtime = process.uptime()
 *Rdp* : List Harga rdp💻
 *Sosmed* : List Harga Kebutuhan Sosmed 👾
 ========================
+*reedemml* : Kode Reedem ML💎
 *Mlpo* : List PO ML 💎
 *Promo* : List Promo 💎
 *Format* : Cek Format Beli ✅
@@ -2816,6 +2788,52 @@ runtime = process.uptime()
 *Oiya Jangan Lupa Kasih Prefix Bang*
 Contoh = .menu
 
+`
+sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`allmenu`,buttonText:{displayText:'TANYA DOANG'},type:1},{buttonId:`rules`,buttonText:{displayText:'KAGAK BELI -_-'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+}
+else if(menusimpel = true){
+        stod = `${sender}`
+fill =`Hai Kak ${pushname}, ${tampilUcapan}
+Silahkan Pilih Untuk Menampilkan Menu
+
+Jika Button Tidak Muncul Ketik .allmenu`
+menu =` ${NamaBot}`
+gbutsan = [
+{buttonId:`allmenu`,buttonText:{displayText:'SHOW MENU'},type:1},
+{buttonId:`store`,buttonText:{displayText:'STORE MENU'},type:1},
+{buttonId:`script`,buttonText:{displayText:'SC'},type:1}
+]
+mhan = await kurr.prepareMessage(from, ofrply, image, {thumbnail: ofrply})
+const btnmenu = {
+imageMessage: mhan.message.imageMessage,
+contentText: `${fill}`,
+footerText: `${menu}`,
+buttons: gbutsan,
+headerType: 4
+}
+kurr.sendMessage(from, btnmenu, MessageType.buttonsMessage, {contextInfo :{text: 'hi',
+"forwardingScore": 1000000000,
+isForwarded: false,
+sendEphemeral: false,
+"externalAdReply": {
+"title": `hallo ${pushname}` ,
+"body": `${jmn} - ${week} ${weton} - ${calender}`,
+"mediaType": "2",
+"thumbnail": pporigi,
+},mentionedJid:[stod]}, quoted : ftrol})
+}
+break
+case 'list':
+  if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
+        if(menusimpel == false){               
+                const timestampi = speed();
+					const latensyi = speed() - timestampi                
+runtime = process.uptime()
+                nomor = 1
+                stod = `${sender}`
+       stst = await kurr.getStatus(`${sender.split('@')[0]}@c.us`)
+				stst = stst.status == 401 ? '' : stst.status
+       menu = ` *KALAU BOT BALES LAGI BERART ADA KODE REEDEM*
 `
 sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`allmenu`,buttonText:{displayText:'TANYA DOANG'},type:1},{buttonId:`rules`,buttonText:{displayText:'KAGAK BELI -_-'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 }
