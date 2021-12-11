@@ -2586,7 +2586,7 @@ sendEphemeral: false,
 },mentionedJid:[stod]}, quoted : ftrol})
 }
 break
-case 'format':
+case 'reedemml':
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
         if(menusimpel == false){               
                 const timestampi = speed();
@@ -2596,19 +2596,7 @@ runtime = process.uptime()
                 stod = `${sender}`
        stst = await kurr.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
-       menu = ` *Format Order Byy Store*
-
-Format Order Diamond / Candy
-Nama Akun :
-Id :
-Server : 
-Menu Yang Dipilih :
-
-==========================
-Format Lainnya Tanya admin
-*Note*
-Salah Pengisian Data Bukan Tanggung Jawab Admin*
-
+       menu = ` *KALAU BOT BALES LAGI BERARTI ADA KODE REEDEM*
 `
 sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`allmenu`,buttonText:{displayText:'ALL MENU'},type:1},{buttonId:`rules`,buttonText:{displayText:'RULES'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 }
@@ -2644,7 +2632,7 @@ sendEphemeral: false,
 },mentionedJid:[stod]}, quoted : ftrol})
 }
 break
-case 'reedemml':
+case 'pormat':
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
         if(menusimpel == false){               
                 const timestampi = speed();
@@ -2654,7 +2642,17 @@ runtime = process.uptime()
                 stod = `${sender}`
        stst = await kurr.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
-       menu = ` *KALAU BOT BALES LAGI BERARTI ADA KODE REEDEM*
+       menu = ` *Format Order ByyStore*
+       Id 
+       Server
+       Nama akun
+       Menu Yang Dipilih 
+       =======================
+       *Format Order Byy Store Non Game*
+       Menu Yang Diinginkan 
+       Metode Pembayaran 
+       ======================== 
+       *Kesalahan Pengisian Data Bukan Tanggung Jawab Admin*
 `
 sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`allmenu`,buttonText:{displayText:'ALL MENU'},type:1},{buttonId:`rules`,buttonText:{displayText:'RULES'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 }
