@@ -2817,6 +2817,8 @@ runtime = process.uptime()
 *Mla* : List Harga Diamond MLBB A💎
 *Mlsemib* : List Harga Diamond MLBB Semi B💎
 *Mlsemic* : List Harga Diamond MlBB Semi C💎
+*Mlsuperslow* : List Harga Dm Ml Supersloww 💎
+*Genshin* : List Harga G Crystal Genshin 💸
 *Sosis* : List Harga Candy Sausage Man🍬
 *Cashpb*:: List Harga Cash PB💰
 *Ff* : List Harga Diamond Free Fire💎
@@ -2824,6 +2826,7 @@ runtime = process.uptime()
 *Rdp* : List Harga rdp💻
 *Sosmed* : List Harga Kebutuhan Sosmed 👾
 *Pubg* : List Harga Uc Pubg💵
+*Ragnarox* : List Harga Ragnarox X💎
 ========================
 *Reedemml* : Kode Reedem ML💎
 *Mlpo* : List PO ML 💎
@@ -2836,6 +2839,189 @@ runtime = process.uptime()
 =======================
 *Oiya Jangan Lupa Kasih Prefix Bang*
 Contoh = .menu
+
+`
+sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`allmenu`,buttonText:{displayText:'TANYA DOANG'},type:1},{buttonId:`rules`,buttonText:{displayText:'KAGAK BELI -_-'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+}
+else if(menusimpel = true){
+        stod = `${sender}`
+fill =`Hai Kak ${pushname}, ${tampilUcapan}
+Silahkan Pilih Untuk Menampilkan Menu
+
+Jika Button Tidak Muncul Ketik .allmenu`
+menu =` ${NamaBot}`
+gbutsan = [
+{buttonId:`allmenu`,buttonText:{displayText:'SHOW MENU'},type:1},
+{buttonId:`store`,buttonText:{displayText:'STORE MENU'},type:1},
+{buttonId:`script`,buttonText:{displayText:'SC'},type:1}
+]
+mhan = await kurr.prepareMessage(from, ofrply, image, {thumbnail: ofrply})
+const btnmenu = {
+imageMessage: mhan.message.imageMessage,
+contentText: `${fill}`,
+footerText: `${menu}`,
+buttons: gbutsan,
+headerType: 4
+}
+kurr.sendMessage(from, btnmenu, MessageType.buttonsMessage, {contextInfo :{text: 'hi',
+"forwardingScore": 1000000000,
+isForwarded: false,
+sendEphemeral: false,
+"externalAdReply": {
+"title": `hallo ${pushname}` ,
+"body": `${jmn} - ${week} ${weton} - ${calender}`,
+"mediaType": "2",
+"thumbnail": pporigi,
+},mentionedJid:[stod]}, quoted : ftrol})
+}
+break 
+case 'mlsuperslow':
+  if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
+        if(menusimpel == false){               
+                const timestampi = speed();
+					const latensyi = speed() - timestampi                
+runtime = process.uptime()
+                nomor = 1
+                stod = `${sender}`
+       stst = await kurr.getStatus(`${sender.split('@')[0]}@c.us`)
+				stst = stst.status == 401 ? '' : stst.status
+       menu = ` *DM ML SUPER SLOW* 
+
+*PAKET A*
+*PROSES 7-10 Hari Max 14 HARI*
+
+735  💎 : Rp. 118.925
+980  💎 : Rp. 158.900
+1225💎 : Rp. 198.875
+1470💎 : Rp. 235.850
+1715💎 : Rp. 274.825
+1960💎 : Rp. 312.800
+2205💎 : Rp. 349.775
+2450💎 : Rp. 389.750
+2695💎 : Rp. 427.725
+
+==========================
+
+*PAKET B*
+*PROSES 14-20 HARI*
+
+3185 💎 = Rp. 498.675
+3675 💎 = Rp. 579.625
+3884 💎 = Rp. 617.020
+4165 💎 = Rp. 660.575
+4655 💎 = Rp. 736.525
+4900 💎 = Rp. 780.500
+5390 💎 = Rp. 858.450
+
+`
+sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`allmenu`,buttonText:{displayText:'TANYA DOANG'},type:1},{buttonId:`rules`,buttonText:{displayText:'KAGAK BELI -_-'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+}
+else if(menusimpel = true){
+        stod = `${sender}`
+fill =`Hai Kak ${pushname}, ${tampilUcapan}
+Silahkan Pilih Untuk Menampilkan Menu
+
+Jika Button Tidak Muncul Ketik .allmenu`
+menu =` ${NamaBot}`
+gbutsan = [
+{buttonId:`allmenu`,buttonText:{displayText:'SHOW MENU'},type:1},
+{buttonId:`store`,buttonText:{displayText:'STORE MENU'},type:1},
+{buttonId:`script`,buttonText:{displayText:'SC'},type:1}
+]
+mhan = await kurr.prepareMessage(from, ofrply, image, {thumbnail: ofrply})
+const btnmenu = {
+imageMessage: mhan.message.imageMessage,
+contentText: `${fill}`,
+footerText: `${menu}`,
+buttons: gbutsan,
+headerType: 4
+}
+kurr.sendMessage(from, btnmenu, MessageType.buttonsMessage, {contextInfo :{text: 'hi',
+"forwardingScore": 1000000000,
+isForwarded: false,
+sendEphemeral: false,
+"externalAdReply": {
+"title": `hallo ${pushname}` ,
+"body": `${jmn} - ${week} ${weton} - ${calender}`,
+"mediaType": "2",
+"thumbnail": pporigi,
+},mentionedJid:[stod]}, quoted : ftrol})
+}
+break
+case 'genshin':
+  if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
+        if(menusimpel == false){               
+                const timestampi = speed();
+					const latensyi = speed() - timestampi                
+runtime = process.uptime()
+                nomor = 1
+                stod = `${sender}`
+       stst = await kurr.getStatus(`${sender.split('@')[0]}@c.us`)
+				stst = stst.status == 401 ? '' : stst.status
+       menu = ` *List genshin impact*
+
+Status ready✅
+Via ID
+*60 G crystal* Rp 12.800
+330 G crystal* Rp 61.700
+*1090 G crystal Rp 185.700
+*2240 G crystal* Rp 397.000
+*3880 G crystal* Rp 610.000
+*8080 G crystal* Rp 1.220.000
+*BLESSING* 65.000
+
+`
+sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`allmenu`,buttonText:{displayText:'TANYA DOANG'},type:1},{buttonId:`rules`,buttonText:{displayText:'KAGAK BELI -_-'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+}
+else if(menusimpel = true){
+        stod = `${sender}`
+fill =`Hai Kak ${pushname}, ${tampilUcapan}
+Silahkan Pilih Untuk Menampilkan Menu
+
+Jika Button Tidak Muncul Ketik .allmenu`
+menu =` ${NamaBot}`
+gbutsan = [
+{buttonId:`allmenu`,buttonText:{displayText:'SHOW MENU'},type:1},
+{buttonId:`store`,buttonText:{displayText:'STORE MENU'},type:1},
+{buttonId:`script`,buttonText:{displayText:'SC'},type:1}
+]
+mhan = await kurr.prepareMessage(from, ofrply, image, {thumbnail: ofrply})
+const btnmenu = {
+imageMessage: mhan.message.imageMessage,
+contentText: `${fill}`,
+footerText: `${menu}`,
+buttons: gbutsan,
+headerType: 4
+}
+kurr.sendMessage(from, btnmenu, MessageType.buttonsMessage, {contextInfo :{text: 'hi',
+"forwardingScore": 1000000000,
+isForwarded: false,
+sendEphemeral: false,
+"externalAdReply": {
+"title": `hallo ${pushname}` ,
+"body": `${jmn} - ${week} ${weton} - ${calender}`,
+"mediaType": "2",
+"thumbnail": pporigi,
+},mentionedJid:[stod]}, quoted : ftrol})
+}
+break
+case 'Ragnarox':
+  if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
+        if(menusimpel == false){               
+                const timestampi = speed();
+					const latensyi = speed() - timestampi                
+runtime = process.uptime()
+                nomor = 1
+                stod = `${sender}`
+       stst = await kurr.getStatus(`${sender.split('@')[0]}@c.us`)
+				stst = stst.status == 401 ? '' : stst.status
+       menu = ` LIST Ragnarox X Generation
+2580💎= Rp63.000
+6450💎=Rp157.500
+10300💎=Rp252.200
+12900💎=Rp315.000
+
+Via id:
 
 `
 sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`allmenu`,buttonText:{displayText:'TANYA DOANG'},type:1},{buttonId:`rules`,buttonText:{displayText:'KAGAK BELI -_-'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
