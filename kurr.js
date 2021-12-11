@@ -2810,9 +2810,10 @@ runtime = process.uptime()
        stst = await kurr.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
        menu = ` _*ByyStore BOT*_
+
 *LIST MENU BYY STORE*
 =====================
-*List* : Untuk melihat daftar menu yang ada di byy store✅
+*List* : Untuk Melihat Daftar Menu Yang Ada Di Byy Store✅
 *Mla* : List Harga Diamond MLBB A💎
 *Mlsemib* : List Harga Diamond MLBB Semi B💎
 *Mlsemic* : List Harga Diamond MlBB Semi C💎
@@ -2823,10 +2824,10 @@ runtime = process.uptime()
 *Rdp* : List Harga rdp💻
 *Sosmed* : List Harga Kebutuhan Sosmed 👾
 ========================
-*reedemml* : Kode Reedem ML💎
+*Reedemml* : Kode Reedem ML💎
 *Mlpo* : List PO ML 💎
 *Promo* : List Promo 💎
-*Format* : Cek Format Beli ✅
+*Pormat* : Cek Format Beli ✅
 *Pay* : Nomer Untuk Tf💵
 *Botwa* :List Harga Bot Wa,Jasa Run Bot🚀
 *Qriss* : Kode Qris📌
@@ -2870,7 +2871,7 @@ sendEphemeral: false,
 },mentionedJid:[stod]}, quoted : ftrol})
 }
 break
-case 'list':
+case 'pubg':
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
         if(menusimpel == false){               
                 const timestampi = speed();
@@ -2880,7 +2881,27 @@ runtime = process.uptime()
                 stod = `${sender}`
        stst = await kurr.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
-       menu = ` *KALAU BOT BALES LAGI BERART ADA KODE REEDEM*
+       menu = ` *UC PUBG MOBILE REG INDO 🇮🇩*
+*VIA ID & NICK*
+*Estimasi proses : 1 - 30 menit, MAX 24 JAM*
+
+52💵 Rp. 9.900
+131💵 Rp. 22.500
+263💵 Rp. 43.000
+530💵 Rp. 88.000
+825💵 Rp. 131.900
+1100💵 Rp. 172.900
+1925💵 Rp. 299.890
+2200💵 Rp. 342.980
+2425💵 Rp. 384.970
+2875💵 Rp. 427.000
+3025💵 Rp. 469.990
+3300💵 Rp. 514.000
+4125💵 Rp. 642.000
+4400💵 Rp. 683.000
+5500💵 Rp. 855.000
+6600💵 Rp. 1.028.000
+*BERLAKU KELIPATAN*
 `
 sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`allmenu`,buttonText:{displayText:'TANYA DOANG'},type:1},{buttonId:`rules`,buttonText:{displayText:'KAGAK BELI -_-'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 }
