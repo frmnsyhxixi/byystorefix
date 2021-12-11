@@ -2960,14 +2960,16 @@ runtime = process.uptime()
 				stst = stst.status == 401 ? '' : stst.status
        menu = ` *List genshin impact*
 
-Status ready✅
+Status Ready✅
+=========================
 Via ID
 *60 G crystal* Rp 12.800
-330 G crystal* Rp 61.700
-*1090 G crystal Rp 185.700
+*330 G crystal* Rp 61.700
+*1090 G crystal* Rp 185.700
 *2240 G crystal* Rp 397.000
 *3880 G crystal* Rp 610.000
 *8080 G crystal* Rp 1.220.000
+===========================
 *BLESSING* 65.000
 
 `
@@ -3005,7 +3007,7 @@ sendEphemeral: false,
 },mentionedJid:[stod]}, quoted : ftrol})
 }
 break
-case 'Ragnarox':
+case 'ragnarox':
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
         if(menusimpel == false){               
                 const timestampi = speed();
@@ -3017,9 +3019,9 @@ runtime = process.uptime()
 				stst = stst.status == 401 ? '' : stst.status
        menu = ` LIST Ragnarox X Generation
 2580💎= Rp63.000
-6450💎=Rp157.500
-10300💎=Rp252.200
-12900💎=Rp315.000
+6450💎= Rp157.500
+10300💎= Rp252.200
+12900💎= Rp315.000
 
 Via id:
 
