@@ -4378,6 +4378,11 @@ break
 					reply('Gunakan foto!')
 					}
 					break 
+	 case 'Qris':	
+			    
+				qute = fs.readFileSync('media/devil.jpg') 
+				   kurr.sendMessage(from, qute, image, { quoted: freply, caption: '*QRIS : BYY STORE*\n*NOTE* \n\nSCANNYA JAM 07.00-16.00 YA BIAR CEPET MASUK KE SALDO' })				   
+				   break
 		case 'biru':
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
 					var imgbb = require('imgbb-uploader')
