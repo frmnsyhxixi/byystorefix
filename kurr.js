@@ -1992,7 +1992,7 @@ QRIS : SCAN PP GRUP JAM 08.00-17.00
 *UNTUK MEMBAYAR* *PAKE DUID LANGSUNG* *(COD) +2K*
 
 `
-sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`allmenu`,buttonText:{displayText:'ALL MENU'},type:1},{buttonId:`rules`,buttonText:{displayText:'RULES'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`pormat`,buttonText:{displayText:'FORMAT'},type:1},{buttonId:`caraorder`,buttonText:{displayText:'CARA ORDER'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 }
 else if(menusimpel = true){
         stod = `${sender}`
@@ -2065,7 +2065,7 @@ NB : Proses maksimal 24 jam
 *HARGA SEWAKTU WAKTU BERUBAH*
 
 `
-sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`allmenu`,buttonText:{displayText:'ALL MENU'},type:1},{buttonId:`rules`,buttonText:{displayText:'RULES'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`list`,buttonText:{displayText:'LIST HARGA'},type:1},{buttonId:`pay`,buttonText:{displayText:'METODE PEMBAYARAN'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 }
 else if(menusimpel = true){
         stod = `${sender}`
@@ -2206,7 +2206,7 @@ Jam Operasional : Buka 09.00 - 19.00 WIB (LEWAT JAM DIPROSES BESOK!)
 NB : Proses maksimal 24 jam
 
 `
-sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`allmenu`,buttonText:{displayText:'ALL MENU'},type:1},{buttonId:`rules`,buttonText:{displayText:'RULES'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`list`,buttonText:{displayText:'LIST HARGA'},type:1},{buttonId:`caraorder`,buttonText:{displayText:'CARA ORDER'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 }
 else if(menusimpel = true){
         stod = `${sender}`
@@ -2267,7 +2267,7 @@ Proses maksimal 24 jam
 *HARGA SEWAKTU WAKTU BERUBAH*
 
 `
-sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`allmenu`,buttonText:{displayText:'ALL MENU'},type:1},{buttonId:`rules`,buttonText:{displayText:'RULES'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`list`,buttonText:{displayText:'LIST HARGA'},type:1},{buttonId:`caraorder`,buttonText:{displayText:'caraorder'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 }
 else if(menusimpel = true){
         stod = `${sender}`
@@ -2327,7 +2327,7 @@ Proses maksimal 24 jam
 *HARGA SEWAKTU WAKTU BERUBAH*
 
 `
-sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`allmenu`,buttonText:{displayText:'ALL MENU'},type:1},{buttonId:`rules`,buttonText:{displayText:'RULES'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`list`,buttonText:{displayText:'LIST HARGA'},type:1},{buttonId:`caraorder`,buttonText:{displayText:'CARA ORDER'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 }
 else if(menusimpel = true){
         stod = `${sender}`
@@ -2404,7 +2404,7 @@ NICK :
 ORDER DM :
 
 `
-sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`allmenu`,buttonText:{displayText:'ALL MENU'},type:1},{buttonId:`rules`,buttonText:{displayText:'RULES'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`list`,buttonText:{displayText:'LIST HARGA'},type:1},{buttonId:`caraorder`,buttonText:{displayText:'CARA ORDER'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 }
 else if(menusimpel = true){
         stod = `${sender}`
@@ -2458,7 +2458,7 @@ runtime = process.uptime()
 5. Done
 
 `
-sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`allmenu`,buttonText:{displayText:'ALL MENU'},type:1},{buttonId:`rules`,buttonText:{displayText:'RULES'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`list`,buttonText:{displayText:'LIST HARGA'},type:1},{buttonId:`caraorder`,buttonText:{displayText:'CARA ORDER'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 }
 else if(menusimpel = true){
         stod = `${sender}`
@@ -2656,7 +2656,7 @@ runtime = process.uptime()
 ================================ 
 *Kesalahan Pengisian Data Bukan Tanggung Jawab Admin*
 `
-sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`allmenu`,buttonText:{displayText:'ALL MENU'},type:1},{buttonId:`rules`,buttonText:{displayText:'RULES'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`list`,buttonText:{displayText:'LIST HARGA'},type:1},{buttonId:`pay`,buttonText:{displayText:'PEMBAYARAN'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 }
 else if(menusimpel = true){
         stod = `${sender}`
@@ -2720,7 +2720,7 @@ Melanggar tidak dapat garansi!
 *TERIMA KASIH*
 
 `
-sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`allmenu`,buttonText:{displayText:'ALL MENU'},type:1},{buttonId:`rules`,buttonText:{displayText:'RULES'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`list`,buttonText:{displayText:'LIST HARGA'},type:1},{buttonId:`caraorder`,buttonText:{displayText:'CARA ORDER'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 }
 else if(menusimpel = true){
         stod = `${sender}`
@@ -2764,7 +2764,7 @@ runtime = process.uptime()
                 stod = `${sender}`
        stst = await kurr.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
-       menu = ` *SCAN QRISS JAM 08.00-17.00 WIB LEBIH DARI ITU PROSES BESOK*
+       menu = `*SCAN QRISS JAM 08.00-17.00 WIB LEBIH DARI ITU PROSES BESOK*
 
 `
 sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`allmenu`,buttonText:{displayText:'ALL MENU'},type:1},{buttonId:`rules`,buttonText:{displayText:'RULES'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
@@ -2853,8 +2853,8 @@ Silahkan Pilih Untuk Menampilkan Menu
 Jika Button Tidak Muncul Ketik .allmenu`
 menu =` ${NamaBot}`
 gbutsan = [
-{buttonId:`allmenu`,buttonText:{displayText:'SHOW MENU'},type:1},
-{buttonId:`store`,buttonText:{displayText:'STORE MENU'},type:1},
+{buttonId:`pay`,buttonText:{displayText:'PEMBAYARAN'},type:1},
+{buttonId:`pormat`,buttonText:{displayText:'FORMAT ORDER'},type:1},
 {buttonId:`script`,buttonText:{displayText:'SC'},type:1}
 ]
 mhan = await kurr.prepareMessage(from, ofrply, image, {thumbnail: ofrply})
@@ -2916,7 +2916,7 @@ runtime = process.uptime()
 5390 💎 = Rp. 858.450
 
 `
-sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`allmenu`,buttonText:{displayText:'TANYA DOANG'},type:1},{buttonId:`rules`,buttonText:{displayText:'KAGAK BELI -_-'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`list`,buttonText:{displayText:'LIST HARGA'},type:1},{buttonId:`caraorder`,buttonText:{displayText:'CARA ORDER'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 }
 else if(menusimpel = true){
         stod = `${sender}`
@@ -2975,7 +2975,7 @@ Via ID
 *BLESSING* 65.000🐱
 
 `
-sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`allmenu`,buttonText:{displayText:'TANYA DOANG'},type:1},{buttonId:`rules`,buttonText:{displayText:'KAGAK BELI -_-'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`list`,buttonText:{displayText:'LIST HARGA'},type:1},{buttonId:`caraorder`,buttonText:{displayText:'CARA ORDER'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 }
 else if(menusimpel = true){
         stod = `${sender}`
@@ -3028,7 +3028,7 @@ runtime = process.uptime()
 Via id:
 
 `
-sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`allmenu`,buttonText:{displayText:'TANYA DOANG'},type:1},{buttonId:`rules`,buttonText:{displayText:'KAGAK BELI -_-'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`list`,buttonText:{displayText:'LIST HARGA'},type:1},{buttonId:`caraorder`,buttonText:{displayText:'CARA ORDER'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 }
 else if(menusimpel = true){
         stod = `${sender}`
@@ -3094,7 +3094,7 @@ runtime = process.uptime()
 6600💵 Rp. 1.028.000
 *BERLAKU KELIPATAN*
 `
-sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`allmenu`,buttonText:{displayText:'TANYA DOANG'},type:1},{buttonId:`rules`,buttonText:{displayText:'KAGAK BELI -_-'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`list`,buttonText:{displayText:'LIST HARGA'},type:1},{buttonId:`caraorder`,buttonText:{displayText:'CARA ORDER'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 }
 else if(menusimpel = true){
         stod = `${sender}`
@@ -3226,7 +3226,7 @@ Guaranted : * Garansi *
 JIKA DROP DAN STATUS GARANSI , MAKA AKAN DI ISI ULANG.
 
 `
-sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`allmenu`,buttonText:{displayText:'ALL MENU'},type:1},{buttonId:`rules`,buttonText:{displayText:'RULES'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`list`,buttonText:{displayText:'LIST HARGA'},type:1},{buttonId:`caraorder`,buttonText:{displayText:'CARA ORDER'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 }
 else if(menusimpel = true){
         stod = `${sender}`
@@ -3286,7 +3286,7 @@ runtime = process.uptime()
 *PERMANEN* : 30K
 
 `
-sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`allmenu`,buttonText:{displayText:'ALL MENU'},type:1},{buttonId:`rules`,buttonText:{displayText:'RULES'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`list`,buttonText:{displayText:'LIST HARGA'},type:1},{buttonId:`caraorder`,buttonText:{displayText:'CARA ORDER'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 }
 else if(menusimpel = true){
         stod = `${sender}`
@@ -3394,7 +3394,7 @@ Spesifikasi :
 - Garansi/berlaku : 1 bln, 2 bln, 5 bln, 10 bln, 12 bln
 
 `
-sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`allmenu`,buttonText:{displayText:'ALL MENU'},type:1},{buttonId:`rules`,buttonText:{displayText:'RULES'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`list`,buttonText:{displayText:'LIST MENU'},type:1},{buttonId:`caraorder`,buttonText:{displayText:'CARA ORDER'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 }
 else if(menusimpel = true){
         stod = `${sender}`
