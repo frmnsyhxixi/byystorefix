@@ -4378,7 +4378,7 @@ break
 					reply('Gunakan foto!')
 					}
 					break 
-	 case 'Qris':	
+	 case 'qris':	
 			    
 				qute = fs.readFileSync('media/devil.jpg') 
 				   kurr.sendMessage(from, qute, image, { quoted: freply, caption: '*QRIS : BYY STORE*\n*NOTE* \n\nSCANNYA JAM 07.00-16.00 YA BIAR CEPET MASUK KE SALDO' })				   
