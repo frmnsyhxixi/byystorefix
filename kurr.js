@@ -2099,7 +2099,7 @@ sendEphemeral: false,
 },mentionedJid:[stod]}, quoted : ftrol})
 }
 break
-case 'mlsemib':
+case 'mlb':
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
         if(menusimpel == false){               
                 const timestampi = speed();
@@ -2137,7 +2137,7 @@ NICK :
 ORDER DM :
 
 `
-sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`allmenu`,buttonText:{displayText:'ALL MENU'},type:1},{buttonId:`rules`,buttonText:{displayText:'RULES'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`list`,buttonText:{displayText:'LIST HARGA'},type:1},{buttonId:`caraorder`,buttonText:{displayText:'CARA ORDER'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 }
 else if(menusimpel = true){
         stod = `${sender}`
@@ -2817,7 +2817,7 @@ runtime = process.uptime()
 ==============================
 *List* : Untuk Melihat Daftar Menu Yang Ada Di Byy Store✅
 *Mla* : List Harga Diamond MLBB A💎
-*Mlsemib* : List Harga Diamond MLBB Semi B💎
+*Mlb* : List Harga Diamond MLBB B💎
 *Mlsemic* : List Harga Diamond MlBB Semi C💎
 *Mlsuperslow* : List Harga Dm Ml Supersloww 💎
 *Genshin* : List Harga G Crystal Genshin 💸
@@ -2843,7 +2843,7 @@ runtime = process.uptime()
 Contoh = .menu
 
 `
-sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`list`,buttonText:{displayText:'TANYA DOANG'},type:1},{buttonId:`caraorder`,buttonText:{displayText:'KAGAK BELI -_-'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`list`,buttonText:{displayText:'LIST HARGA'},type:1},{buttonId:`caraorder`,buttonText:{displayText:'CARA ORDER'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 }
 else if(menusimpel = true){
         stod = `${sender}`
@@ -4378,11 +4378,6 @@ break
 					reply('Gunakan foto!')
 					}
 					break 
-	 case 'qris':	
-			    
-				qute = fs.readFileSync('media/devil.jpg') 
-				   kurr.sendMessage(from, qute, image, { quoted: freply, caption: '*QRIS : BYY STORE*\n*NOTE* \n\nSCANNYA JAM 07.00-16.00 YA BIAR CEPET MASUK KE SALDO' })				   
-				   break
 		case 'biru':
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
 					var imgbb = require('imgbb-uploader')
