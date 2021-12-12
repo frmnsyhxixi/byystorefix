@@ -2503,8 +2503,9 @@ runtime = process.uptime()
                 stod = `${sender}`
        stst = await kurr.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
-       menu = ` *SABAR YA BOS,KALAU BOT BALES LAGI BERARTI ADA PO*
-       *KALO GABALES YA GADA PO*
+       menu = ` 
+*SABAR YA BOS,KALAU BOT BALES LAGI BERARTI ADA PO*
+*KALO GABALES YA GADA PO*
 `
 sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`allmenu`,buttonText:{displayText:'ALL MENU'},type:1},{buttonId:`rules`,buttonText:{displayText:'RULES'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 }
@@ -2596,7 +2597,8 @@ runtime = process.uptime()
                 stod = `${sender}`
        stst = await kurr.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
-       menu = ` *KALAU BOT BALES LAGI BERARTI ADA KODE REEDEM*
+       menu = ` 
+*KALAU BOT BALES LAGI BERARTI ADA KODE REEDEM*
 `
 sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`allmenu`,buttonText:{displayText:'ALL MENU'},type:1},{buttonId:`rules`,buttonText:{displayText:'RULES'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 }
@@ -2647,12 +2649,12 @@ runtime = process.uptime()
        Server
        Nama akun
        Menu Yang Dipilih 
-       =======================
-       *Format Order Byy Store Non Game*
+================================
+*Format Order Byy Store Non Game*
        Menu Yang Diinginkan 
        Metode Pembayaran 
-       ======================== 
-       *Kesalahan Pengisian Data Bukan Tanggung Jawab Admin*
+================================ 
+*Kesalahan Pengisian Data Bukan Tanggung Jawab Admin*
 `
 sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`allmenu`,buttonText:{displayText:'ALL MENU'},type:1},{buttonId:`rules`,buttonText:{displayText:'RULES'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 }
@@ -2812,7 +2814,7 @@ runtime = process.uptime()
        menu = ` _*ByyStore BOT*_
 
 *LIST MENU BYY STORE*
-=====================
+==============================
 *List* : Untuk Melihat Daftar Menu Yang Ada Di Byy Store✅
 *Mla* : List Harga Diamond MLBB A💎
 *Mlsemib* : List Harga Diamond MLBB Semi B💎
@@ -2820,7 +2822,7 @@ runtime = process.uptime()
 *Mlsuperslow* : List Harga Dm Ml Supersloww 💎
 *Genshin* : List Harga G Crystal Genshin 💸
 *Sosis* : List Harga Candy Sausage Man🍬
-*Cashpb*:: List Harga Cash PB💰
+*Cashpb* : List Harga Cash PB💰
 *Ff* : List Harga Diamond Free Fire💎
 *Neflix* : Akun Netflix PREMIUM 🎮
 *Rdp* : List Harga rdp💻
@@ -2833,7 +2835,7 @@ runtime = process.uptime()
 *Promo* : List Promo 💎
 *Pormat* : Cek Format Beli ✅
 *Pay* : Nomer Untuk Tf💵
-*Botwa* :List Harga Bot Wa,Jasa Run Bot🚀
+*Botwa* : List Harga Bot Wa,Jasa Run Bot🚀
 *Qriss* : Kode Qris📌
 *Caraorder* : Untuk Bertanya Cara Order🔍
 =======================
@@ -2841,7 +2843,7 @@ runtime = process.uptime()
 Contoh = .menu
 
 `
-sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`allmenu`,buttonText:{displayText:'TANYA DOANG'},type:1},{buttonId:`rules`,buttonText:{displayText:'KAGAK BELI -_-'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`list`,buttonText:{displayText:'TANYA DOANG'},type:1},{buttonId:`caraorder`,buttonText:{displayText:'KAGAK BELI -_-'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 }
 else if(menusimpel = true){
         stod = `${sender}`
@@ -2963,14 +2965,14 @@ runtime = process.uptime()
 Status Ready✅
 =========================
 Via ID
-*60 G crystal* Rp 12.800
-*330 G crystal* Rp 61.700
-*1090 G crystal* Rp 185.700
-*2240 G crystal* Rp 397.000
-*3880 G crystal* Rp 610.000
-*8080 G crystal* Rp 1.220.000
+*60 G crystal* Rp 12.800❄️
+*330 G crystal* Rp 61.700❄️
+*1090 G crystal* Rp 185.700❄️
+*2240 G crystal* Rp 397.000❄️
+*3880 G crystal* Rp 610.000❄️
+*8080 G crystal* Rp 1.220.000❄️
 ===========================
-*BLESSING* 65.000
+*BLESSING* 65.000🐱
 
 `
 sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`allmenu`,buttonText:{displayText:'TANYA DOANG'},type:1},{buttonId:`rules`,buttonText:{displayText:'KAGAK BELI -_-'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
@@ -7624,7 +7626,7 @@ Link : ${get_resultP.url_audio}
 					reply(`Sukses membuat grup ${argz[0]}`)
                 }
 				break
-            case 'welcome': 
+            case 'welcome ': 
               if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
 	        if (!isGroup) return reply(mess.only.group)
 			if (!isOwner && !isGroupAdmins) return sticAdmin(from)
