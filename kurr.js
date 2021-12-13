@@ -698,7 +698,7 @@ options
 
 const daftar1 = `Hai kak  ${pushname} ${tampilUcapan} \n\nSebelum Mengakses Bot Verify Terlebih Dahulu Ya `
 const daftar2 = '```Ketik Tombol Di Bawah Untuk Verify Kak```'
-const daftar3 = [{buttonId: `verify`,buttonText: {displayText: `🗿DAFTAR🗿 `,},type: 1,},]
+const daftar3 = [{buttonId: `verify`,buttonText: {displayText: `DAFTAR `,},type: 1,},]
 
 const createSerial = (size) => {
 return crypto.randomBytes(size).toString('hex').slice(0, size)
@@ -1927,17 +1927,39 @@ runtime = process.uptime()
                 stod = `${sender}`
        stst = await kurr.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
-       menu = `╭─❒ 「 KurzBotz Assistan Info 」
-*冬TOTAL MENU :464*
-*冬OWNER: ${NamaOwner}*
-*冬NOMER OWNER: ${NomorOwner}*
-*冬Lib: Baileys*
-*冬speed bot: ${latensyi.toFixed(4)} Second*
-*冬prefix : Multi Prefix* 
-*冬runtime : ${waktu(runtime)}* 
+       menu = `_*ByyStore BOT*_
+
+*LIST MENU BYY STORE*
+==============================
+*List* : Untuk Melihat Daftar Menu Yang Ada Di Byy Store✅
+*Mla* : List Harga Diamond MLBB A💎
+*Mlb* : List Harga Diamond MLBB B💎
+*Mlsemic* : List Harga Diamond MlBB Semi C💎
+*Mlsuperslow* : List Harga Dm Ml Supersloww 💎
+*Genshin* : List Harga G Crystal Genshin 💸
+*Sosis* : List Harga Candy Sausage Man🍬
+*Cashpb* : List Harga Cash PB💰
+*Ff* : List Harga Diamond Free Fire💎
+*Neflix* : Akun Netflix PREMIUM 🎮
+*Rdp* : List Harga rdp💻
+*Sosmed* : List Harga Kebutuhan Sosmed 👾
+*Pubg* : List Harga Uc Pubg💵
+*Ragnarox* : List Harga Ragnarox X💎
+========================
+*Reedemml* : Kode Reedem ML💎
+*Mlpo* : List PO ML 💎
+*Promo* : List Promo 💎
+*Pormat* : Cek Format Beli ✅
+*Pay* : Nomer Untuk Tf💵
+*Botwa* : List Harga Bot Wa,Jasa Run Bot🚀
+*Qriss* : Kode Qris📌
+*Caraorder* : Untuk Bertanya Cara Order🔍
+=======================
+*Oiya Jangan Lupa Kasih Prefix Bang*
+Contoh = .menu
 
 `
-sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`allmenu`,buttonText:{displayText:'ALL MENU'},type:1},{buttonId:`rules`,buttonText:{displayText:'RULES'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`caraorder`,buttonText:{displayText:'CARA ORDER'},type:1},{buttonId:`pormat`,buttonText:{displayText:'FORMAT ORDER'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 }
 else if(menusimpel = true){
         stod = `${sender}`
@@ -2116,10 +2138,10 @@ runtime = process.uptime()
 
 39💎 [34+5 Bonus] Rp. 8.938
 65💎 [58+7 Bonus] Rp. 14.540
-92💎 [83+9 Bonus] Rp. 19.800
-133💎 [120+13 Bonus] Rp. 27.950
-266💎 [240+26 Bonus] Rp. 55.500
-400💎 [360+40 Bonus] Rp. 83.590
+92💎 [83+9 Bonus] Rp. 19.970
+133💎 [120+13 Bonus] Rp. 28.950
+266💎 [240+26 Bonus] Rp. 56.500
+400💎 [360+40 Bonus] Rp. 85.000
 534💎 [480+54 Bonus] Rp. 111.940
 670💎 [600+70 Bonus] Rp. 139.900
 1342💎[1200+142 Bonus] Rp. 272.932
@@ -2452,13 +2474,13 @@ runtime = process.uptime()
        menu = ` _*CARA ORDER DM BYYSTORE*_
 
 1. Tanyakan Stock Ke Admin
-2. Tf ke nomer ewallet admin
+2. Tf ke Nomer Ewallet Admin
 3. Kirim Id Server/Data
 4. Proses
 5. Done
 
 `
-sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`list`,buttonText:{displayText:'LIST HARGA'},type:1},{buttonId:`caraorder`,buttonText:{displayText:'CARA ORDER'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`list`,buttonText:{displayText:'LIST HARGA'},type:1},{buttonId:`pay`,buttonText:{displayText:'PEMBAYARAN'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 }
 else if(menusimpel = true){
         stod = `${sender}`
@@ -2503,8 +2525,7 @@ runtime = process.uptime()
                 stod = `${sender}`
        stst = await kurr.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
-       menu = ` 
-*SABAR YA BOS,KALAU BOT BALES LAGI BERARTI ADA PO*
+       menu = `*SABAR YA BOS,KALAU BOT BALES LAGI BERARTI ADA PO*
 *KALO GABALES YA GADA PO*
 `
 sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`allmenu`,buttonText:{displayText:'ALL MENU'},type:1},{buttonId:`rules`,buttonText:{displayText:'RULES'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
