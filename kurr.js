@@ -1930,8 +1930,9 @@ runtime = process.uptime()
        menu = `_*ByyStore BOT*_
 
 *LIST MENU BYY STORE*
+*HARGA RESELLER CHAT ADMIN*
 ==============================
-*List* : Untuk Melihat Daftar Menu Yang Ada Di Byy Store✅
+*Menu* : Untuk Melihat Daftar Menu Yang Ada Di Byy Store✅
 *Mla* : List Harga Diamond MLBB A💎
 *Mlb* : List Harga Diamond MLBB B💎
 *Mlsemic* : List Harga Diamond MlBB Semi C💎
@@ -1957,7 +1958,6 @@ runtime = process.uptime()
 =======================
 *Oiya Jangan Lupa Kasih Prefix Bang*
 Contoh = .menu
-*HARGA RESELLER PC*
 
 `
 sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`caraorder`,buttonText:{displayText:'CARA ORDER'},type:1},{buttonId:`pormat`,buttonText:{displayText:'FORMAT ORDER'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
@@ -2836,6 +2836,7 @@ runtime = process.uptime()
        menu = ` _*ByyStore BOT*_
 
 *LIST MENU BYY STORE*
+*HARGA RESELLER CHAT ADMIN*
 ==========================
 *List* : Untuk Melihat Daftar Menu Yang Ada Di Byy Store✅
 *Mla* : List Harga Diamond MLBB A💎
@@ -2863,7 +2864,6 @@ runtime = process.uptime()
 =======================
 *Oiya Jangan Lupa Kasih Prefix Bang*
 Contoh = .menu
-*HARGA RESELER PC*
 
 `
 sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`pormat`,buttonText:{displayText:'FORMAT ORDER'},type:1},{buttonId:`caraorder`,buttonText:{displayText:'CARA ORDER'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
