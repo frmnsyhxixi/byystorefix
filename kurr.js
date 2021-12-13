@@ -1931,7 +1931,7 @@ runtime = process.uptime()
 
 *LIST MENU BYY STORE*
 *HARGA RESELLER CHAT ADMIN*
-==============================
+==========================
 *Menu* : Untuk Melihat Daftar Menu Yang Ada Di Byy Store✅
 *Mla* : List Harga Diamond MLBB A💎
 *Mlb* : List Harga Diamond MLBB B💎
