@@ -1957,6 +1957,7 @@ runtime = process.uptime()
 =======================
 *Oiya Jangan Lupa Kasih Prefix Bang*
 Contoh = .menu
+*HARGA RESELLER PC*
 
 `
 sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`caraorder`,buttonText:{displayText:'CARA ORDER'},type:1},{buttonId:`pormat`,buttonText:{displayText:'FORMAT ORDER'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
@@ -2862,6 +2863,7 @@ runtime = process.uptime()
 =======================
 *Oiya Jangan Lupa Kasih Prefix Bang*
 Contoh = .menu
+*HARGA RESELER PC*
 
 `
 sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`pormat`,buttonText:{displayText:'FORMAT ORDER'},type:1},{buttonId:`caraorder`,buttonText:{displayText:'CARA ORDER'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
