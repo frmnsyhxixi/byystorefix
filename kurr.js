@@ -2398,13 +2398,13 @@ runtime = process.uptime()
        menu = `*VALORANT POINT*
 *VIA ID + TAG*
 
-125 VP Rp. 15.200
-420 VP Rp. 48.200
-700 VP Rp. 76.400
-1375 VP Rp. 144.000
-2400 VP Rp. 239.000
-4000 VP Rp. 382.000
-8150 VP Rp. 765.000
+*125 VP* Rp. 15.200🎮
+*420 VP* Rp. 48.200🎮
+*700 VP* Rp. 76.400🎮
+*1375 VP* Rp. 144.000🎮
+*2400 VP* Rp. 239.000🎮
+*4000 VP* Rp. 382.000🎮
+*8150 VP* Rp. 765.000🎮
 
 Jam Operasional : Buka 24 Jam
 Estimasi proses : 1 - 20 menit
