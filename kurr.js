@@ -3297,16 +3297,16 @@ runtime = process.uptime()
        
 *LIST HARGA BOT BYY STORE*
 =====================
-*BIASA* : 20K
-*BISA HIDETAG,TAGALL* : 35K
-*BISA ANTIWAME,ANTIVIRTEX,ANTILINK* : 35K
-*KOMPLIT* : 50K
+*BIASA* : 10K
+*BISA HIDETAG,TAGALL* : 15K
+*BISA ANTIWAME,ANTIVIRTEX,ANTILINK* : 15K
+*KOMPLIT* : 25K
 
 *LIST HARGA RUN BOT WA*
 ======================
 *1 MINGGU*  : 7K
-*1 BULAN* : 25
-*PERMANEN* : 30K
+*1 BULAN* : 15k
+*PERMANEN* : 20K
 
 `
 sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`list`,buttonText:{displayText:'LIST HARGA'},type:1},{buttonId:`caraorder`,buttonText:{displayText:'CARA ORDER'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
