@@ -1946,6 +1946,7 @@ runtime = process.uptime()
 *Sosmed* : List Harga Kebutuhan Sosmed 👾
 *Pubg* : List Harga Uc Pubg💵
 *Ragnarox* : List Harga Ragnarox X💎
+*Valorant* : List Harga Valorant 🎮
 ========================
 *Reedemml* : Kode Reedem ML💎
 *Mlpo* : List PO ML 💎
@@ -2351,6 +2352,67 @@ Proses maksimal 24 jam
 
 `
 sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`list`,buttonText:{displayText:'LIST HARGA'},type:1},{buttonId:`caraorder`,buttonText:{displayText:'CARA ORDER'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+}
+else if(menusimpel = true){
+        stod = `${sender}`
+fill =`Hai Kak ${pushname}, ${tampilUcapan}
+Silahkan Pilih Untuk Menampilkan Menu
+
+Jika Button Tidak Muncul Ketik .allmenu`
+menu =` ${NamaBot}`
+gbutsan = [
+{buttonId:`allmenu`,buttonText:{displayText:'SHOW MENU'},type:1},
+{buttonId:`store`,buttonText:{displayText:'STORE MENU'},type:1},
+{buttonId:`script`,buttonText:{displayText:'SC'},type:1}
+]
+mhan = await kurr.prepareMessage(from, ofrply, image, {thumbnail: ofrply})
+const btnmenu = {
+imageMessage: mhan.message.imageMessage,
+contentText: `${fill}`,
+footerText: `${menu}`,
+buttons: gbutsan,
+headerType: 4
+}
+kurr.sendMessage(from, btnmenu, MessageType.buttonsMessage, {contextInfo :{text: 'hi',
+"forwardingScore": 1000000000,
+isForwarded: false,
+sendEphemeral: false,
+"externalAdReply": {
+"title": `hallo ${pushname}` ,
+"body": `${jmn} - ${week} ${weton} - ${calender}`,
+"mediaType": "2",
+"thumbnail": pporigi,
+},mentionedJid:[stod]}, quoted : ftrol})
+}
+break
+case 'valorant':
+  if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
+        if(menusimpel == false){               
+                const timestampi = speed();
+					const latensyi = speed() - timestampi                
+runtime = process.uptime()
+                nomor = 1
+                stod = `${sender}`
+       stst = await kurr.getStatus(`${sender.split('@')[0]}@c.us`)
+				stst = stst.status == 401 ? '' : stst.status
+       menu = `*VALORANT POINT*
+*VIA ID + TAG*
+
+125 VP Rp. 15.200
+420 VP Rp. 48.200
+700 VP Rp. 76.400
+1375 VP Rp. 144.000
+2400 VP Rp. 239.000
+4000 VP Rp. 382.000
+8150 VP Rp. 765.000
+
+Jam Operasional : Buka 24 Jam
+Estimasi proses : 1 - 20 menit
+Proses maksimal 24 jam
+*HARGA SEWAKTU WAKTU BERUBAH*
+
+`
+sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`menu`,buttonText:{displayText:'LIST MENU'},type:1},{buttonId:`caraorder`,buttonText:{displayText:'CARA ORDER'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 }
 else if(menusimpel = true){
         stod = `${sender}`
@@ -2852,6 +2914,7 @@ runtime = process.uptime()
 *Sosmed* : List Harga Kebutuhan Sosmed 👾
 *Pubg* : List Harga Uc Pubg💵
 *Ragnarox* : List Harga Ragnarox X💎
+*valorant* : List Harga Valorant 🎮
 ========================
 *Reedemml* : Kode Reedem ML💎
 *Mlpo* : List PO ML 💎
