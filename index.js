@@ -223,7 +223,7 @@ kurr.on("group-update", async (anu) => {
 
     if (anu.announce == "false") {
 
-      teks = `- [ Group Opened ] -\n\n_Group telah dibuka oleh admin_\n_Sekarang semua member bisa mengirim pesan_`;
+      teks = `- [ Group Opened ] -\n\n*GROUP TELAH DIBUKA OLEH ADMIN*\n*YOK GAS ORDERRR*`;
 
       kurr.sendMessage(metdata.id, teks, MessageType.text);
 
@@ -231,7 +231,7 @@ kurr.on("group-update", async (anu) => {
 
     } else if (anu.announce == "true") {
 
-      teks = `- [ Group Closed ] -\n\n_Group telah ditutup oleh admin_\n_Sekarang hanya admin yang dapat mengirim pesan_`;
+      teks = `- [ Group Closed ] -\n\n_Group telah ditutup oleh admin_\n*MAKASIH YANG SUDAH ORDER SEMOGA DILANCARKAN REZEKINYAAA*`;
 
       kurr.sendMessage(metdata.id, teks, MessageType.text);
 
@@ -384,9 +384,9 @@ kurr.on('group-update', async (anu) => {
 		tag = anu.descOwner.replace('@c.us', '@s.whatsapp.net')
 		kurr.sendMessage(group.id, `Group Description Change\n\nâ€¢ Admin : @${tag.split("@")[0]}\nâ€¢ Group : ${group.subject}\nâ€¢ descTime : ${anu.descTime}\nâ€¢ descID : ${anu.descId}\nâ€¢ descNew : ${anu.desc}`, MessageType.text, {contextInfo: { mentionedJid: [tag]}})
 		} else if (!anu.restrict == '') {
-			kurr.sendMessage(group.id, `Group Restrict Change\n\nâ€¢ Group : ${group.subject}\nâ€¢ groupId : ${anu.jid}\nâ€¢ restrict : ${anu.restrict}`, MessageType.text)
+			kurr.sendMessage(group.id, `Group Restrict Change\n\nGroup : ${group.subject}\nGroupId : ${anu.jid}\nRestrict : ${anu.restrict}`, MessageType.text)
 			} else if (!anu.announce == '') {
-				kurr.sendMessage(group.id, `Group Announce Change\n\nâ€¢ Group : ${group.subject}\nâ€¢ groupId : ${anu.jid}\nâ€¢ announce : ${anu.announce}`, MessageType.text)
+				kurr.sendMessage(group.id, `Group Announce Change\n\nGroup : ${group.subject}\nGroupId : ${anu.jid}\nAnnounce : ${anu.announce}`, MessageType.text)
 				} 
 					} catch(err) {
 						e = String(err)
