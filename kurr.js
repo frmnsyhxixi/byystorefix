@@ -7712,7 +7712,7 @@ Link : ${get_resultP.url_audio}
 					reply(`Sukses membuat grup ${argz[0]}`)
                 }
 				break
-            case 'welcome ': 
+            case 'welcome': 
               if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
 	        if (!isGroup) return reply(mess.only.group)
 			if (!isOwner && !isGroupAdmins) return sticAdmin(from)
