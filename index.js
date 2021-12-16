@@ -229,7 +229,7 @@ kurr.on("group-update", async (anu) => {
 
       console.log(`- [ Group Opened ] - In ${metdata.subject}`);
 
-    } else if (anu.announce == "true") {
+    } else if (anu.announce == "false") {
 
       teks = `- [ Group Closed ] -\n\n_Group telah ditutup oleh admin_\n_Sekarang hanya admin yang dapat mengirim pesan_`;
 
