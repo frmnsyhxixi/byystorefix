@@ -1918,21 +1918,28 @@ case 'sound1':
       kurr.sendMessage(from, omkeh, MessageType.audio, { quoted: mek, mimetype: 'audio/mp4', ptt: true })
           break
 case 'menu':
-  if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
+  if (!isRegistered) return reply(`daftar dlu om ketik .verify`)
         if(menusimpel == false){               
                 const timestampi = speed();
-					const latensyi = speed() - timestampi                
-runtime = process.uptime()
+					const latensyi = speed() - timestampi
+                if (!isRegistered) return reply(`daftar dlu om ketik .verify`)
+				runtime = process.uptime()
+				
                 nomor = 1
                 stod = `${sender}`
        stst = await kurr.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
+				ini_result = await fetchJson('https://api.lolhuman.xyz/api/random/quotesnime?apikey=${lolkey}')
+     get_result = ini_result.result
+        ini_txt = `*${get_result.character} pernah berkata*\n\n`
+       ini_txt += `~${get_result.quote}`
+       
        menu = `_*ByyStore BOT*_
 
 *LIST MENU BYY STORE*
 *HARGA RESELLER CHAT ADMIN*
 ==========================
-*Menu* : Untuk Melihat Daftar Menu Yang Ada Di Byy Store✅
+*List* : Untuk Melihat Daftar Menu Yang Ada Di Byy Store✅
 *Mla* : List Harga Diamond MLBB A💎
 *Mlb* : List Harga Diamond MLBB B💎
 *Mlsemic* : List Harga Diamond MlBB Semi C💎
@@ -1946,7 +1953,7 @@ runtime = process.uptime()
 *Sosmed* : List Harga Kebutuhan Sosmed 👾
 *Pubg* : List Harga Uc Pubg💵
 *Ragnarox* : List Harga Ragnarox X💎
-*Valorant* : List Harga Valorant 🎮
+*valorant* : List Harga Valorant 🎮
 ========================
 *Reedemml* : Kode Reedem ML💎
 *Mlpo* : List PO ML 💎
@@ -1959,9 +1966,8 @@ runtime = process.uptime()
 =======================
 *Oiya Jangan Lupa Kasih Prefix Bang*
 Contoh = .menu
-
-`
-sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`${prefix}caraorder`,buttonText:{displayText:'CARA ORDER'},type:1},{buttonId:`pormat`,buttonText:{displayText:'FORMAT ORDER'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+ `
+sendButLocation(from, `${menu}`, "*_© KurrXdゑ v.3.0_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`info`,buttonText:{displayText:'INFO BOT'},type:1},{buttonId:`store`,buttonText:{displayText:'STORE BOT'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 }
 else if(menusimpel = true){
         stod = `${sender}`
@@ -1969,11 +1975,11 @@ fill =`Hai Kak ${pushname}, ${tampilUcapan}
 Silahkan Pilih Untuk Menampilkan Menu
 
 Jika Button Tidak Muncul Ketik .allmenu`
-menu =` ${NamaBot}`
+menu =` KurrXdゑ v.3.0`
 gbutsan = [
 {buttonId:`allmenu`,buttonText:{displayText:'SHOW MENU'},type:1},
 {buttonId:`store`,buttonText:{displayText:'STORE MENU'},type:1},
-{buttonId:`script`,buttonText:{displayText:'SC'},type:1}
+{buttonId:`script`,buttonText:{displayText:'SEWABOT'},type:1}
 ]
 mhan = await kurr.prepareMessage(from, ofrply, image, {thumbnail: ofrply})
 const btnmenu = {
