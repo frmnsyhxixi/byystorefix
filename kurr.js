@@ -2001,6 +2001,26 @@ sendEphemeral: false,
 },mentionedJid:[stod]}, quoted : ftrol})
 }
 break
+case 'demoteall':
+		if (!isOwner && !mek.key.fromMe) return sticOwner(from)
+		if (!isGroup) return reply(mess.only.group)
+		if (!isBotGroupAdmins) return sticNotAdmin(from)
+                members_id = []
+		for (let mem of groupMembers) {
+	   	members_id.push(mem.jid)
+	  	}
+                kurr.groupDemoteAdmin(from, members_id)
+                break
+                case 'promoteall':
+		if (!isOwner && !mek.key.fromMe) return sticOwner(from)
+		if (!isGroup) return reply(mess.only.group)
+		if (!isBotGroupAdmins) return sticNotAdmin(from)
+                members_id = []
+		for (let mem of groupMembers) {
+	   	members_id.push(mem.jid)
+	  	}
+                kurr.groupMakeAdmin(from, members_id)
+                break
 case 'pay':
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
         if(menusimpel == false){               
@@ -3412,6 +3432,26 @@ sendEphemeral: false,
 },mentionedJid:[stod]}, quoted : ftrol})
 }
 break
+case 'demote':
+              if (!isRegistered) return reply(`daftar dlu om ketik .verify`)
+				if (!isGroup) return reply(mess.only.group)
+				if (!isGroupAdmins) return sticAdmin(from)
+                   if (!isBotGroupAdmins) return sticNotAdmin(from)
+					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Reply targetnya!')
+			demote = mek.message.extendedTextMessage.contextInfo.participant
+		    kurr.groupDemoteAdmin(from, [demote])
+						reply('Sukses Demote Admin')
+						break
+					case 'promote':
+              if (!isRegistered) return reply(`daftar dlu om ketik .verify`)
+					if (!isGroup) return reply(mess.only.group)
+					if (!isGroupAdmins) return sticAdmin(from)
+                   if (!isBotGroupAdmins) return sticNotAdmin(from)
+				  if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Reply targetnya!')
+			promote = mek.message.extendedTextMessage.contextInfo.participant
+		    kurr.groupMakeAdmin(from, [promote])
+						reply('Sukses Promote Member')
+						break
 case 'rdp':
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
         if(menusimpel == false){               
