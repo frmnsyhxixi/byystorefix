@@ -299,7 +299,7 @@ kurr.on('group-participants-update', async (anu) => {
 
 				img = await getBuffer(ppUrl)
 
-				teks = `✅ Hi @${num.split('@')[0]} ✅\nSelamat Datang Di Group: ${mdata.subject}\n\n Join Pada Jam: ${time} Untuk Menampilkan Menu Silahkan Ketik .Menu`
+				teks = `✅ Hi @${num.split('@')[0]} ✅\nSelamat Datang Di Group: ${mdata.subject}\n\nUntuk Menampilkan Menu Silahkan Ketik .Menu`
 
 				sendButImage(anu.jid, teks, `Byy Store`, img,but = [{buttonId:`menu`, 
 
