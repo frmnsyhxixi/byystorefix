@@ -7729,19 +7729,32 @@ Link : ${get_resultP.url_audio}
                 kurr.updateProfileName(anu)
                 reply(`Sukses mengganti nama ke ${body.slice(9)}`)
                 break                
-             case 'add':
-             reply(`*Punya Tangan Kan kontol? Kalo Punya Ya Dipake Anjengg*`)
-             break
-	
-				case 'kick':
-			if (!isGroup) return reply(mess.only.group)
-			if (!isGroupAdmins) return reply(mess.only.admin)
-			if (!isBotGroupAdmins) return reply(mess.only.Badmin)
-			if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Reply targetnya!')
-			kick = mek.message.extendedTextMessage.contextInfo.participant
-		    kurr.groupRemove(from, [kick])
-						reply('Sukses mengeluarkan peserta')
-                    break
+             case 'add':  
+			if (!isGroup) return reply(lang.onlygc())
+					if (!isGroupAdmins) return reply(lang.onlygcAdmin())
+					if (!isBotGroupAdmins) return reply(lang.botNotAdm())
+                    if (args.length < 1) return reply('Yang mau di add?')
+					if (args[0].startsWith('08')) return reply('Gunakan kode negara mas')
+					orang = args[0] + '@s.whatsapp.net'
+response = await alpha.groupAdd(from, [orang])
+o = response.participants[0]
+let inv = (Object.values(o))
+if(inv[0].code == 409) return reply('Orang yang anda add sudah ada didalam Group!')
+else if(inv[0].code == 403){
+alpha.sendMessage(from, `User private\n\nMengirim Undangan Group Ke @${q.split('@')[0]}`, MessageType.text, {quoted: mek, contextInfo: {mentionedJid: [orang]}})
+kurr.sendMessage(from, orang, inv[0].invite_code, inv[0].invite_code_exp, groupMetadata.subject , `Salah Satu Admin Mengundang Anda Masuk Ke Sini Silahkan Klik Bergabung Untuk Masuk`)
+}
+					break
+			case 'kick':
+if (!isGroup) return reply(lang.onlygc())
+					if (!isGroupAdmins) return reply(lang.onlygcAdmin())
+					if (!isBotGroupAdmins) return reply(lang.botNotAdm())
+if(!q)return reply(`*Format salah!*\n\n*Example : ${prefix + command} @tag*`)
+if (!isBotGroupAdmins) return reply(mess.only.Badmin)
+yau = q.split('@')[1] + '@s.whatsapp.net'
+kurr.groupRemove(from, [yau])
+reply(`Succses kick target!`)
+break
                     case 'creategroup':
 			case 'creategrup':
               if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
