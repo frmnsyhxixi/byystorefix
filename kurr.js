@@ -7736,7 +7736,7 @@ Link : ${get_resultP.url_audio}
                     if (args.length < 1) return reply('Yang mau di add?')
 					if (args[0].startsWith('08')) return reply('Gunakan kode negara mas')
 					orang = args[0] + '@s.whatsapp.net'
-response = await alpha.groupAdd(from, [orang])
+response = await kurr.groupAdd(from, [orang])
 o = response.participants[0]
 let inv = (Object.values(o))
 if(inv[0].code == 409) return reply('Orang yang anda add sudah ada didalam Group!')
