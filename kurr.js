@@ -6276,6 +6276,140 @@ const btnasu = {
 await kurr.sendMessage(from, btnasu, MessageType.buttonsMessage, {quoted: ftrol})
 					}
 					break
+					case 'antihidetag':
+if (!mek.key.fromMe && !isOwner && !isCreator) return reply(lang.onlyOwner())
+if (args[0] === "on") {
+if (antihidetag === true) return reply(lang.anjawaUdhOn(command))
+antihidetag = true
+reply(lang.anjawaOn(command))
+} else if (args[0] === "off") {
+if (antihidetag === false) return
+antihidetag = false
+reply(lang.anjawaOff(command))
+} else if (!q) {
+          sendButMessage(from, `MODE ANTI HIDETAG`, `Choose one`, [
+            {
+              buttonId: 'antihidetag on',
+              buttonText: {
+                displayText: `On`,
+              },
+              type: 1,
+            },
+            {
+              buttonId: 'antihidetag off',
+              buttonText: {
+                displayText: `Off`,
+              },
+              type: 1,
+            },
+          ]);
+        }
+        break;
+case 'autovn':
+if (!mek.key.fromMe && !isOwner && !isCreator) return reply(lang.onlyOwner())
+if (args[0] === "on") {
+if (autovn === true) return reply(lang.anjawaUdhOn(command))
+autovn = true
+reply(lang.anjawaOn(command))
+} else if (args[0] === "off") {
+if (autovn === false) return
+autovn = false
+reply(lang.anjawaOff(command))
+} else if (!q) {
+          sendButMessage(from, `MODE AUTO VN`, `Choose one`, [
+            {
+              buttonId: 'autovn on',
+              buttonText: {
+                displayText: `On`,
+              },
+              type: 1,
+            },
+            {
+              buttonId: 'autovn off',
+              buttonText: {
+                displayText: `Off`,
+              },
+              type: 1,
+            },
+          ]);
+        }
+        break
+        case 'ban': case 'banned': case 'block':
+          if (!mek.key.fromMe && !isOwner && !isCreator) return reply(lang.onlyOwner())
+          bnnd = `${args[0].replace('@', '')}@s.whatsapp.net`
+					banned.push(bnnd)
+					fs.writeFileSync('./database/banned.json', JSON.stringify(banned))
+					fakestatus(`Nomor ${bnnd} telah dibanned!`)
+          break
+
+        case 'unban': case 'unbannned': case 'unblock':
+          if (!mek.key.fromMe && !isOwner && !isCreator) return reply(lang.onlyOwner())
+          ya = `${args[0].replace('@', '')}@s.whatsapp.net`
+					unb = banned.indexOf(ya)
+					banned.splice(unb, 1)
+					fs.writeFileSync('./database/banned.json', JSON.stringify(banned))
+					fakestatus(`Nomor ${ya} telah di unban!`)
+          break
+					case 'antibug':
+          if (!mek.key.fromMe && !isOwner && !isCreator) return reply(lang.onlyOwner())
+          if (args[0] === 'on') {
+          if (bugc === true) return reply(lang.anjawaUdhOn(command))
+          bugc = true
+          antitrol = true
+          reply(lang.anjawaOn(command))
+          } else if (args[0] === 'off') {
+          if (bugc === false) return
+          bugc = false
+          antitrol = false
+          reply(lang.anjawaOff(command))
+          } else if (!q) {
+          sendButMessage(from, `MODE ANTIBUG`, `Choose one`, [
+            {
+              buttonId: 'antibug on',
+              buttonText: {
+                displayText: `On`,
+              },
+              type: 1,
+            },
+            {
+              buttonId: 'antibug off',
+              buttonText: {
+                displayText: `Off`,
+              },
+              type: 1,
+            },
+          ]);
+        }
+        break;
+          case 'antidelete':
+if (!mek.key.fromMe && !isOwner && !isCreator) return reply(lang.onlyOwner())
+if (args[0] === "on") {
+if (antidel === true) return reply(lang.anjawaUdhOn(command))
+antidel = true
+reply(lang.anjawaOn(command))
+} else if (args[0] === "off") {
+if (antidel === false) return
+antidel = false
+reply(lang.anjawaOff(command))
+} else if (!q) {
+          sendButMessage(from, `MODE ANTI DELETE`, `Choose one`, [
+            {
+              buttonId: 'antidelete on',
+              buttonText: {
+                displayText: `On`,
+              },
+              type: 1,
+            },
+            {
+              buttonId: 'antidelete off',
+              buttonText: {
+                displayText: `Off`,
+              },
+              type: 1,
+            },
+          ]);
+        }
+        break
 				case 'antiwame':
 				if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
 	        if (!isGroup) return reply(mess.only.group)
