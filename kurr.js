@@ -3442,15 +3442,25 @@ case 'demote':
 						reply('Sukses Demote Admin')
 						break
 					case 'promote':
-              if (!isRegistered) return reply(`daftar dlu om ketik .verify`)
-					if (!isGroup) return reply(mess.only.group)
-					if (!isGroupAdmins) return sticAdmin(from)
-                   if (!isBotGroupAdmins) return sticNotAdmin(from)
-				  if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Reply targetnya!')
-			promote = mek.message.extendedTextMessage.contextInfo.participant
-		    kurr.groupMakeAdmin(from, [promote])
-						reply('Sukses Promote Member')
-						break
+             reply('NAIK PANGKAT KAH MANIEZ?')
+             if (!isGroupAdmins) return reply(mess.only.admin)
+             if (mek.message.extendedTextMessage === null || mek.message.extendedTextMessage === undefined) return;
+             if (mek.message.extendedTextMessage.contextInfo.participant === undefined) {
+             entah = mek.message.extendedTextMessage.contextInfo.mentionedJid
+             if (entah.length > 0) {
+             var mems_ids = []
+             for (let ids of entah) {
+             mems_ids.push(ids)
+}
+             kurr.groupMakeAdmin(from, mems_ids)
+             } else {
+             kurr.groupMakeAdmin(from, entah)
+}
+             } else {
+             entah = mek.message.extendedTextMessage.contextInfo.participant
+             kurr.groupMakeAdmin(from, [entah])
+}
+             break
 case 'rdp':
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
         if(menusimpel == false){               
