@@ -2956,7 +2956,7 @@ runtime = process.uptime()
 Contoh = .menu
 
 `
-sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`pormat`,buttonText:{displayText:'FORMAT ORDER'},type:1},{buttonId:`caraorder`,buttonText:{displayText:'CARA ORDER'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`list`,buttonText:{displayText:'LIST HARGA'},type:1},{buttonId:`${prefix}caraorder`,buttonText:{displayText:'CARA ORDER'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 }
 else if(menusimpel = true){
         stod = `${sender}`
@@ -2966,8 +2966,8 @@ Silahkan Pilih Untuk Menampilkan Menu
 Jika Button Tidak Muncul Ketik .allmenu`
 menu =` ${NamaBot}`
 gbutsan = [
-{buttonId:`pay`,buttonText:{displayText:'PEMBAYARAN'},type:1},
-{buttonId:`pormat`,buttonText:{displayText:'FORMAT ORDER'},type:1},
+{buttonId:`allmenu`,buttonText:{displayText:'SHOW MENU'},type:1},
+{buttonId:`store`,buttonText:{displayText:'STORE MENU'},type:1},
 {buttonId:`script`,buttonText:{displayText:'SC'},type:1}
 ]
 mhan = await kurr.prepareMessage(from, ofrply, image, {thumbnail: ofrply})
@@ -2989,7 +2989,7 @@ sendEphemeral: false,
 "thumbnail": pporigi,
 },mentionedJid:[stod]}, quoted : ftrol})
 }
-break 
+break
 case 'mlsuperslow':
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
         if(menusimpel == false){               
