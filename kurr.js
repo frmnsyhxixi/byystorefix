@@ -1966,7 +1966,7 @@ case 'menu':
 *Oiya Jangan Lupa Kasih Prefix Bang*
 Contoh = .menu
  `
-sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`caraorder`,buttonText:{displayText:'CARA ORDER'},type:1},{buttonId:`pay`,buttonText:{displayText:'PEMBAYARAN'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `${menu}`, "*_© KurrXdゑ v.3.0_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`info`,buttonText:{displayText:'INFO BOT'},type:1},{buttonId:`store`,buttonText:{displayText:'STORE BOT'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 }
 else if(menusimpel = true){
         stod = `${sender}`
@@ -1974,11 +1974,11 @@ fill =`Hai Kak ${pushname}, ${tampilUcapan}
 Silahkan Pilih Untuk Menampilkan Menu
 
 Jika Button Tidak Muncul Ketik .allmenu`
-menu =` KurrXdゑ v.3.0`
+menu =` Byy Store`
 gbutsan = [
-{buttonId:`allmenu`,buttonText:{displayText:'SHOW MENU'},type:1},
-{buttonId:`store`,buttonText:{displayText:'STORE MENU'},type:1},
-{buttonId:`script`,buttonText:{displayText:'SEWABOT'},type:1}
+{buttonId:`caraorder`,buttonText:{displayText:'CARA ORDER'},type:1},
+{buttonId:`pay`,buttonText:{displayText:'PEMBAYARAN'},type:1},
+{buttonId:`pormat`,buttonText:{displayText:'FORMAT ORDER'},type:1}
 ]
 mhan = await kurr.prepareMessage(from, ofrply, image, {thumbnail: ofrply})
 const btnmenu = {
