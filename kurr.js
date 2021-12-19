@@ -1041,6 +1041,17 @@ return '```' + string + '```'
 			ano = fs.readFileSync('./sticker/anime/owner.webp')
 			kurr.sendMessage(hehe, ano, sticker, { quoted: mek})
 		}
+		const sendButton = async (from, context, fortext, but, mek) => {
+buttonMessages = {
+contentText: context,
+footerText: fortext,
+buttons: but,
+headerType: 1
+}
+kurr.sendMessage(from, buttonMessages, buttonsMessage, {
+quoted: ftrol
+})
+}
 		const sticNotAdmin = (hehe) => {
 			ano = fs.readFileSync('./sticker/anime/notadmin.webp')
 			kurr.sendMessage(hehe, ano, sticker, { quoted: mek})
