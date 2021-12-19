@@ -1966,7 +1966,9 @@ case 'menu':
 *Oiya Jangan Lupa Kasih Prefix Bang*
 Contoh = .menu
  `
-sendButLocation(from, `${menu}`, "*_© KurrXdゑ v.3.0_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`info`,buttonText:{displayText:'INFO BOT'},type:1},{buttonId:`store`,buttonText:{displayText:'STORE BOT'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButImage(anu.jid, teks, `Byy Store`, img,but = [{buttonId:`menu`, 
+
+               buttonText:{displayText: 'MENU'},type:1}], options = {contextInfo: {mentionedJid: [num, htod]}})
 }
 else if(menusimpel = true){
         stod = `${sender}`
