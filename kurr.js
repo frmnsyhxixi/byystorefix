@@ -7933,7 +7933,8 @@ await kurr.sendMessage(from, btngrass, MessageType.buttonsMessage, {quoted: ftro
 					}
 					break
 			case 'addrespon':
-			if (!isOwner && !mek.key.fromMe) return sticOwner(from)
+			if (!isGroupAdmin && isGroupAdmins)
+			return sticOwner(from)
 				if (args.length < 1) return reply(`Penggunaan ${prefix}addrespon hai|hai juga`)
 				argz = arg.split('|')
 				if (checkCommands(argz[0], commandsDB) === true) return reply(`Udah ada`)
