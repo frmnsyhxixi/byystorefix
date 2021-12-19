@@ -1918,22 +1918,16 @@ case 'sound1':
       kurr.sendMessage(from, omkeh, MessageType.audio, { quoted: mek, mimetype: 'audio/mp4', ptt: true })
           break
 case 'menu':
-  if(menusimpel == false){               
+  if (!isGroup) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
+        if(menusimpel == false){               
                 const timestampi = speed();
-					const latensyi = speed() - timestampi
-                if (!isRegistered) return reply(`daftar dlu om ketik .verify`)
-				runtime = process.uptime()
-				
+					const latensyi = speed() - timestampi                
+runtime = process.uptime()
                 nomor = 1
                 stod = `${sender}`
        stst = await kurr.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
-				ini_result = await fetchJson('https://api.lolhuman.xyz/api/random/quotesnime?apikey=${lolkey}')
-     get_result = ini_result.result
-        ini_txt = `*${get_result.character} pernah berkata*\n\n`
-       ini_txt += `~${get_result.quote}`
-       
-       menu = `_*ByyStore BOT*_
+       menu = ` _*ByyStore BOT*_
 
 *LIST MENU BYY STORE*
 *HARGA RESELLER CHAT ADMIN*
@@ -1965,10 +1959,9 @@ case 'menu':
 =======================
 *Oiya Jangan Lupa Kasih Prefix Bang*
 Contoh = .menu
- `
-sendButImage(anu.jid, teks, `Byy Store`, img,but = [{buttonId:`menu`, 
 
-               buttonText:{displayText: 'MENU'},type:1}], options = {contextInfo: {mentionedJid: [num, htod]}})
+`
+sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`list`,buttonText:{displayText:'LIST HARGA'},type:1},{buttonId:`${prefix}caraorder`,buttonText:{displayText:'CARA ORDER'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 }
 else if(menusimpel = true){
         stod = `${sender}`
@@ -1976,11 +1969,11 @@ fill =`Hai Kak ${pushname}, ${tampilUcapan}
 Silahkan Pilih Untuk Menampilkan Menu
 
 Jika Button Tidak Muncul Ketik .allmenu`
-menu =` Byy Store`
+menu =` ${NamaBot}`
 gbutsan = [
-{buttonId:`caraorder`,buttonText:{displayText:'CARA ORDER'},type:1},
-{buttonId:`pay`,buttonText:{displayText:'PEMBAYARAN'},type:1},
-{buttonId:`pormat`,buttonText:{displayText:'FORMAT ORDER'},type:1}
+{buttonId:`allmenu`,buttonText:{displayText:'SHOW MENU'},type:1},
+{buttonId:`store`,buttonText:{displayText:'STORE MENU'},type:1},
+{buttonId:`script`,buttonText:{displayText:'SC'},type:1}
 ]
 mhan = await kurr.prepareMessage(from, ofrply, image, {thumbnail: ofrply})
 const btnmenu = {
