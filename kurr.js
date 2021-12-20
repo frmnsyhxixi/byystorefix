@@ -7954,14 +7954,6 @@ await kurr.sendMessage(from, btngrass, MessageType.buttonsMessage, {quoted: ftro
                 deleteCommands(body.slice(11), commandsDB)
 				reply(`Sukses menghapus respon ${body.slice(11)}`)
 				break
-				case 'addrespon':
-			if (!isOwner && !mek.key.fromMe) return sticOwner(from)
-				if (args.length < 1) return reply(`Penggunaan ${prefix}addrespon hai|hai juga`)
-				argz = arg.split('|')
-				if (checkCommands(argz[0], commandsDB) === true) return reply(`Udah ada`)
-				addCommands(argz[0], argz[1], sender, commandsDB)
-				reply(`Sukses menambahkan respon ${argz[0]}`)
-				break
 				case 'listrespon':
               if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
 teks = `\`\`\`「 LIST RESPON  」\`\`\`\n\n`
@@ -7972,6 +7964,15 @@ teks += `❏ *Creator:* ${commandsDB[i].creator}\n\n`
 }
 reply(teks)
 break
+case 'addrespon':
+			if (!isOwner && !isGroupAdmins && !mek.key.fromMe)
+			return sticOwner(from)
+				if (args.length < 1) return reply(`Penggunaan ${prefix}addrespon hai|hai juga`)
+				argz = arg.split('|')
+				if (checkCommands(argz[0], commandsDB) === true) return reply(`Udah ada`)
+				addCommands(argz[0], argz[1], sender, commandsDB)
+				reply(`Sukses menambahkan respon ${argz[0]}`)
+				break
 		default:break
 		}
 		if (isTTT && isPlayer2){
