@@ -1326,6 +1326,27 @@ reply('_*ByyStore BOT*_
 *Oiya Jangan Lupa Kasih Prefix Bang*
 Contoh = .menu')
 }
+if(isButton == 'pormat'){
+reply('*CONTOH FORMAT :*
+
+Berikan Keterangan Order apa : (DM ML,FF,CANDY,PUBG,CASH PB,YT PREM DAN LAIN LAIN)
+ID : 
+SERVER : 
+Nominal Order :
+
+*KIRIM SS PAYMENT/PEMBAYARAN*
+
+Terimakasih Semoga Mengerti ^_^')
+}
+if(isButton == 'caraorder'){
+reply('_*CARA ORDER DM BYYSTORE*_
+
+1. Tanyakan Stock Ke Admin
+2. Tf ke Nomer Ewallet Admin
+3. Kirim Id Server/Data
+4. Proses
+5. Done')
+}
 if(isButton == 'ytm'){
 reply('http://youtube.com/c/KurrXd')
 }
