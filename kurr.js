@@ -2759,17 +2759,16 @@ runtime = process.uptime()
                 stod = `${sender}`
        stst = await kurr.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
-       menu = ` *Format Order ByyStore*
-       Id 
-       Server
-       Nama akun
-       Menu Yang Dipilih 
-================================
-*Format Order Byy Store Non Game*
-       Menu Yang Diinginkan 
-       Metode Pembayaran 
-================================ 
-*Kesalahan Pengisian Data Bukan Tanggung Jawab Admin*
+       menu = ` *CONTOH FORMAT :*
+
+Berikan Keterangan Order apa : (DM ML,FF,CANDY,PUBG,CASH PB,YT PREM DAN LAIN LAIN)
+ID : 
+SERVER : 
+Nominal Order :
+
+*KIRIM SS PAYMENT/PEMBAYARAN*
+
+Terimakasih Semoga Mengerti ^_^
 `
 sendButLocation(from, `${menu}`, "*_© ByyStore_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`list`,buttonText:{displayText:'LIST HARGA'},type:1},{buttonId:`pay`,buttonText:{displayText:'PEMBAYARAN'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 }
@@ -7947,15 +7946,7 @@ const btngrass = {
 await kurr.sendMessage(from, btngrass, MessageType.buttonsMessage, {quoted: ftrol})
 					}
 					break
-			case 'addrespon':
-			if (!isOwner && !isGroupAdmins && !mek.key.fromMe)
-			return sticOwner(from)
-				if (args.length < 1) return reply(`Penggunaan ${prefix}addrespon hai|hai juga`)
-				argz = arg.split('|')
-				if (checkCommands(argz[0], commandsDB) === true) return reply(`Udah ada`)
-				addCommands(argz[0], argz[1], sender, commandsDB)
-				reply(`Sukses menambahkan respon ${argz[0]}`)
-				break
+			
 			case 'delrespon':
 			if (!isOwner && !mek.key.fromMe) return sticOwner(from)
 				if (args.length < 1) return reply(`Penggunaan ${prefix}delrespon hai`)
