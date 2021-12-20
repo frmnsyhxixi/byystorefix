@@ -7949,7 +7949,7 @@ await kurr.sendMessage(from, btngrass, MessageType.buttonsMessage, {quoted: ftro
 					break
 			
 			case 'delrespon':
-			if (!isOwner && !mek.key.fromMe) return sticOwner(from)
+			if (!isOwner && !isGroupAdmins && !mek.key.fromMe) return sticOwner(from)
 				if (args.length < 1) return reply(`Penggunaan ${prefix}delrespon hai`)
 				if (!checkCommands(body.slice(11), commandsDB)) return reply(`Ga ada di database`)
                 deleteCommands(body.slice(11), commandsDB)
