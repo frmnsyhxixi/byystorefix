@@ -1292,6 +1292,40 @@ sendButMessage(from, `${JSON.stringify(me, null, 2)}`, "*_© Frmnsyhxixi_*", [{b
 if(isButton == 'igm'){
 reply('http://instagram.com/kurrsadboy')
 }
+if(isButton == 'menu'){
+reply('_*ByyStore BOT*_
+
+*LIST MENU BYY STORE*
+*HARGA RESELLER CHAT ADMIN*
+==========================
+*List* : Untuk Melihat Daftar Menu Yang Ada Di Byy Store✅
+*Mla* : List Harga Diamond MLBB A💎
+*Mlb* : List Harga Diamond MLBB B💎
+*Mlsemic* : List Harga Diamond MlBB Semi C💎
+*Mlsuperslow* : List Harga Dm Ml Supersloww 💎
+*Genshin* : List Harga G Crystal Genshin 💸
+*Sosis* : List Harga Candy Sausage Man🍬
+*Cashpb* : List Harga Cash PB💰
+*Ff* : List Harga Diamond Free Fire💎
+*Neflix* : Akun Netflix PREMIUM 🎮
+*Rdp* : List Harga rdp💻
+*Sosmed* : List Harga Kebutuhan Sosmed 👾
+*Pubg* : List Harga Uc Pubg💵
+*Ragnarox* : List Harga Ragnarox X💎
+*valorant* : List Harga Valorant 🎮
+========================
+*Reedemml* : Kode Reedem ML💎
+*Mlpo* : List PO ML 💎
+*Promo* : List Promo 💎
+*Pormat* : Cek Format Beli ✅
+*Pay* : Nomer Untuk Tf💵
+*Botwa* : List Harga Bot Wa,Jasa Run Bot🚀
+*Qriss* : Kode Qris📌
+*Caraorder* : Untuk Bertanya Cara Order🔍
+=======================
+*Oiya Jangan Lupa Kasih Prefix Bang*
+Contoh = .menu')
+}
 if(isButton == 'ytm'){
 reply('http://youtube.com/c/KurrXd')
 }
