@@ -2917,7 +2917,7 @@ sendEphemeral: false,
 },mentionedJid:[stod]}, quoted : ftrol})
 }
 break
-case 'list':
+case 'rekber':
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
         if(menusimpel == false){               
                 const timestampi = speed();
