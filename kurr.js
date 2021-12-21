@@ -2084,7 +2084,7 @@ sendEphemeral: false,
 }
 break
 case 'mla':
-  if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
+  if (!isGroup) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
         if(menusimpel == false){               
                 const timestampi = speed();
 					const latensyi = speed() - timestampi                
@@ -2097,19 +2097,19 @@ runtime = process.uptime()
 *Diamond Mobile Legends Paket A*
 *VIA ID + SERVER*
 
-86💎 = Rp. 19.506
-172💎 = Rp. 38.000
-257💎 = Rp. 57.539
-344💎 = Rp. 76.335
-429💎 = Rp. 95.507
-514💎 = Rp. 114.677
-600💎 = Rp. 133.973
-706💎 = Rp. 152.800
-878💎 = Rp. 189.900
+86💎 = Rp. 19.206
+172💎 = Rp. 37.250
+257💎 = Rp. 56.839
+344💎 = Rp. 75.335
+429💎 = Rp. 93.507
+514💎 = Rp. 111.677
+600💎 = Rp. 132.973
+706💎 = Rp. 150.800
+878💎 = Rp. 187.900
 963💎 = Rp. 205.200
-1050💎 = Rp. 227.900
-1412💎 = Rp. 301.900
-2195💎 = Rp. 446.960
+1050💎 = Rp. 226.900
+1412💎 = Rp. 298.900
+2195💎 = Rp. 443.960
 
 BERLAKU KELIPATAN
 
