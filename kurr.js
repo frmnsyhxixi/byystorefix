@@ -1948,6 +1948,7 @@ runtime = process.uptime()
 *Mla* : List Harga Diamond MLBB A💎
 *Mlb* : List Harga Diamond MLBB B💎
 *Mlsemic* : List Harga Diamond MlBB Semi C💎
+*Mld* : List Harga Dm MLBB D💎
 *Mlsuperslow* : List Harga Dm Ml Supersloww 💎
 *Genshin* : List Harga G Crystal Genshin 💸
 *Sosis* : List Harga Candy Sausage Man🍬
