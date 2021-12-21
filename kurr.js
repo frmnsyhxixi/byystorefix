@@ -1961,6 +1961,7 @@ runtime = process.uptime()
 *valorant* : List Harga Valorant 🎮
 ========================
 *Reedemml* : Kode Reedem ML💎
+*Rekber* : Harga Jasa Rekber Akun 🌚
 *Mlpo* : List PO ML 💎
 *Promo* : List Promo 💎
 *Pormat* : Cek Format Beli ✅
