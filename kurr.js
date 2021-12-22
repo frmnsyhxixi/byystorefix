@@ -3265,7 +3265,7 @@ if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted
             .then(result => {
             let res = '「 *GC WA* 」\n\n'
             for (let i of result) {
-            res += `*Nama*: *${i.nama}\n*Link*: ${i.link}\n\n`
+            res += `*Nama*: *${i.nama}\n*Linkk*: ${i.link}\n\n`
             }
             reply(res)
             });
