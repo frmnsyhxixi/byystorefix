@@ -88,9 +88,9 @@ const { jadibot, stopjadibot, listjadibot } = require('./lib/jadibot.js')
 const scrapper = require('./lib/scrapper')
 const { getBuffer, getGroupAdmins, getRandom, start, info, success, close } = require('./lib/functions')
 const client = new WAConnection()
-const ownerNumber = "6282244760047@s.whatsapp.net"
-const dtod = "6282244760047@s.whatsapp.net"
-const otod = "6282244760047@s.whatsapp.net"
+const ownerNumber = "6289507948843@s.whatsapp.net"
+const dtod = "6289507948843@s.whatsapp.net"
+const otod = "6289507948843@s.whatsapp.net"
 // STICKER WM
 //const exect = require('await-exec')
 //const webp = require('webp-converter')
