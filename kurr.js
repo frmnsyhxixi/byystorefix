@@ -5326,9 +5326,6 @@ break
 				    tagu = `@${nomqm.split('@s.whatsapp.net')[0]}`
 					kurr.sendMessage(from, tagu, text, { quoted: ftrol, contextInfo: { forwardingScore: 508, isForwarded: true, mentionedJid: [nomqm]}})
 					break
-				case 'join': 
-              reply('PUNYA TANGAN KAN MANUAL LAH GOBLOK')
-              break
 				case 'totag':
               if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
 			if (!isGroup) return reply(mess.only.group)
