@@ -299,11 +299,11 @@ kurr.on('group-participants-update', async (anu) => {
 
 				img = await getBuffer(ppUrl)
 
-				teks = `✅ Hi @${num.split('@')[0]} ✅\nSelamat Datang Di Group: ${mdata.subject}\n\nUntuk Menampilkan Menu Silahkan Ketik .Menu`
+				teks = `✅ Hi @${num.split('@')[0]} ✅\nSelamat Datang Di Group: ${mdata.subject}\n\nUntuk Menampilkan Menu Silahkan Cek Deskripsi Yak`
 
 				sendButImage(anu.jid, teks, `Byy Store`, img,but = [{buttonId:`menu`, 
 
-               buttonText:{displayText: 'MENU'},type:1}], options = {contextInfo: {mentionedJid: [num, htod]}})
+               buttonText:{displayText: 'SELAMAT DATANG'},type:1}], options = {contextInfo: {mentionedJid: [num, htod]}})
 
 			} else if (anu.action == 'remove') {
 
