@@ -1820,6 +1820,12 @@ sendEphemeral: false,
 },mentionedJid:[stod]}, quoted : ftrol})
 }
 break
+case 'se':
+         if(!isGroup && !isGroupAdmins)return reply(`PESANAN SUDAH SELESAI SILAHKAN DICEK || *TERIMAKASIH SUDAH ORDER*🥰`)
+         break
+case 'w' :
+        if(!isGroup && !isGroupAdmins)return reply(`PESANAN SEDANG DIPROSES MOHON DITUNGGU || *SABAR YA BWANG PROSES DROP*`)
+        break
 case 'mla':
              reply(`_*ByyStore BOT*_
 *Diamond Mobile Legends Paket A*
