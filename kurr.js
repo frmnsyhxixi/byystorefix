@@ -1821,10 +1821,10 @@ sendEphemeral: false,
 }
 break
 case 'se':
-         if(!isGroup && !isGroupAdmins)return reply(`PESANAN SUDAH SELESAI SILAHKAN DICEK || *TERIMAKASIH SUDAH ORDER*🥰`)
+         if(!isGroup && !isGroupAdmins)reply(`PESANAN SUDAH SELESAI SILAHKAN DICEK || *TERIMAKASIH SUDAH ORDER*🥰`)
          break
 case 'w' :
-        if(!isGroup && !isGroupAdmins)return reply(`PESANAN SEDANG DIPROSES MOHON DITUNGGU || *SABAR YA BWANG PROSES DROP*`)
+        if(!isGroup && !isGroupAdmins)reply(`PESANAN SEDANG DIPROSES MOHON DITUNGGU || *SABAR YA BWANG PROSES DROP*`)
         break
 case 'mla':
              reply(`_*ByyStore BOT*_
