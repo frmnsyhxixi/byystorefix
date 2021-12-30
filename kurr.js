@@ -4018,6 +4018,71 @@ if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted
             reply('kirim/reply gambar/video')
             }
             break
+case 'zekymla':               
+        reply(`*DM ML PAKET A*	
+⬇️⬇️⬇️⬇️⬇️⬇️	
+13+1💎 RP.2,650	
+38+4💎 RP.7,950	
+64+6💎 RP.13,250	
+127+13💎RP.26,500	
+254+30💎RP.53,000	
+317+38💎RP.66,250	
+383+46💎RP.79,500	
+633+83💎RP.132,500	
+1252+194💎RP.265,000	
+2501+475💎RP.530,000	
+6252+1250💎RP.1,325,000`)
+break
+case 'zekymlb':               
+        reply(`*DM ML PAKET B*	
+⬇️⬇️⬇️⬇️⬇️⬇️	
+34+5💎 RP.7,560	
+58+7💎 RP.12,600	
+83+9💎 RP.17,610	
+120+13💎 RP.25,200	
+240+26💎 RP.50,400	
+360+40💎 RP.75,600	
+480+54💎 RP.100,800	
+600+70💎 RP.126,000	
+1200+142💎 RP 252,030	
+2400+300💎 RP.504.000	
+3600+550💎 RP.756,000`)
+break
+case 'zekymlc':               
+        reply(`*DM ML PAKET C*	
+⬇️⬇️⬇️⬇️⬇️⬇️	
+14💎 RP.2,760	
+42💎 RP.8,280	
+70💎 RP.13,800	
+140💎 RP.27,600	
+282💎 RP.55,200	
+345💎 RP.69,000	
+429💎 RP.82,800	
+708💎 RP.136,500	
+1446💎 RP.273,000	
+2976💎 RP.546,000`)
+break
+case 'zekymlc':               
+        reply(`*DM ML PAKET C*	
+⬇️⬇️⬇️⬇️⬇️⬇️	
+14💎 RP.2,760	
+42💎 RP.8,280	
+70💎 RP.13,800	
+140💎 RP.27,600	
+282💎 RP.55,200	
+345💎 RP.69,000	
+429💎 RP.82,800	
+708💎 RP.136,500	
+1446💎 RP.273,000	
+2976💎 RP.546,000`)
+break
+case 'zekypay':               
+        reply(`*PAYMENT*
+*DANA* 081288114854
+*GOPAY* 081288114854
+*OVO* 081288114854`)
+
+             break
 case 'viewonce':
 if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
 res = await kurr.prepareMessageFromContent(from,{
