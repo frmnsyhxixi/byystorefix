@@ -4083,6 +4083,21 @@ case 'zekypay':
 *OVO* 081288114854`)
 
              break
+case 'zekymenu':               
+        reply(`*DAFTAR KODE BOT LIST MENU TOP UP*
+
+#zekymenu : Untuk Memunculkan Menu
+#zekypay : Untuk Memunculkan Metode Pembayaran
+#zekymla : Untuk Memunculkan List Dm MlBB Paket A
+#zekymlb : Untuk Memunculkan List Dm MLBB Paket B
+#zekymlc : Untuk Memunculkan List Dm MLBB Paket C
+#caraorder : Cara Order Dm
+#Formar Order : Format Order
+#botwa : Sewa Bot Byy Store
+
+*NOTE* : HARGA BERUBAH SEWAKTU WAKTU`)
+
+             break
 case 'viewonce':
 if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
 res = await kurr.prepareMessageFromContent(from,{
