@@ -1827,7 +1827,9 @@ case 'w' :
         if(!isGroup && !isGroupAdmins)reply(`PESANAN SEDANG DIPROSES MOHON DITUNGGU || *SABAR YA BWANG PROSES DROP*`)
         break
 case 'mla':
-             reply(`_*ByyStore BOT*_
+             if (!isGroupAdmins) return reply(lang.onlygcAdmin())
+             if (!isGroup) return reply(mess.only.group)
+             if (args.length < 1) return reply(`_*ByyStore BOT*_
 *Diamond Mobile Legends Paket A*
 *VIA ID + SERVER*
 
