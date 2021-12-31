@@ -4018,20 +4018,7 @@ if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted
             reply('kirim/reply gambar/video')
             }
             break
-case 'promo':               
-        reply(`*Promo Diamond Mobile Legends Paket A*
 
-172💎 = 35.700
-257💎 = 53.900
-344💎 = 71.500
-429💎 = 89.500
-514💎  = 107.400
-706💎 = 144.900
-1412💎 = 286.000
-
-*NOTE* : INI PROSESNYA SEMI`)
-
-             break
 case 'zekymla':               
         reply(`*DM ML PAKET A*	
 ⬇️⬇️⬇️⬇️⬇️⬇️	
