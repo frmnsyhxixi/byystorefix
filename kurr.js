@@ -5637,7 +5637,6 @@ var nn = body.slice(9)
 				var bot = gh.split("|")[2];
 			    kurr.sendMessage(from, `${bot}`, text, {quoted: { key: { fromMe: false, participant: `${parti}@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { conversation: `${targetq}` }}})
 					break
-            case 'hidetag':
             case 'h':
             if (!isOwner && !isGroupAdmins)  return sticOwner(from)
             ht = body.slice(9)
