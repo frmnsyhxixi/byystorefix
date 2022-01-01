@@ -3553,7 +3553,7 @@ break
 		case 'sc':
 		case 'sewabot':
 		case 'sourcecode':
-		anu =`*SC? AWOGAWOGAWOG🗿*`
+		anu =`*SC? AWOGAWOGAWOG*`
  buttons = [
 {buttonId: `menu`, buttonText: {displayText: 'BACK➡️'}, type: 1},
 {buttonId:`donasi`,buttonText:{displayText:'DONASI'},type:1},
