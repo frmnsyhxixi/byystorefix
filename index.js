@@ -223,7 +223,7 @@ kurr.on("group-update", async (anu) => {
 
     if (anu.announce == "false") {
 
-      teks = `[ Group Opened ]`;
+      teks = `- [ Group Opened ] -\n\n*GROUP TELAH DIBUKA OLEH ADMIN*\n*YOK GAS ORDERRR*`;
 
       kurr.sendMessage(metdata.id, teks, MessageType.text);
 
@@ -231,7 +231,7 @@ kurr.on("group-update", async (anu) => {
 
     } else if (anu.announce == "true") {
 
-      teks = `- [ Group Closed ] -`;
+      teks = `- [ Group Closed ] -\n\n_Group telah ditutup oleh admin_\n*MAKASIH YANG SUDAH ORDER SEMOGA DILANCARKAN REZEKINYAAA*`;
 
       kurr.sendMessage(metdata.id, teks, MessageType.text);
 
@@ -245,7 +245,7 @@ kurr.on("group-update", async (anu) => {
 
         anu.descOwner.split("@")[0]
 
-      }\nDeskripsi Baru : ${anu.desc}`;
+      }\nï¿½ Deskripsi Baru : ${anu.desc}`;
 
       kurr.sendMessage(metdata.id, teks, MessageType.text, {
 
@@ -299,7 +299,7 @@ kurr.on('group-participants-update', async (anu) => {
 
 				img = await getBuffer(ppUrl)
 
-				teks = `✅ Hi @${num.split('@')[0]} ✅\nSelamat Datang Di Group: ${mdata.subject}\n\nUntuk Menampilkan Menu Silahkan Cek Deskripsi Yak`
+				teks = `✅ Hi @${num.split('@')[0]} ✅\nSelamat Datang Di Group: ${mdata.subject}\n\nUntuk Menampilkan Menu Silahkan Lihat Deskripsi`
 
 				sendButImage(anu.jid, teks, `Byy Store`, img,but = [{buttonId:`menu`, 
 
@@ -382,7 +382,7 @@ kurr.on('group-update', async (anu) => {
 	group = await kurr.groupMetadata(anu.jid)
 	if (!anu.desc == '') {
 		tag = anu.descOwner.replace('@c.us', '@s.whatsapp.net')
-		kurr.sendMessage(group.id, `Group Description Change\n\nAdmin : @${tag.split("@")[0]}\nGroup : ${group.subject}\ndescTime : ${anu.descTime}\ndescID : ${anu.descId}\ndescNew : ${anu.desc}`, MessageType.text, {contextInfo: { mentionedJid: [tag]}})
+		kurr.sendMessage(group.id, `Group Description Change\n\nâ€¢ Admin : @${tag.split("@")[0]}\nâ€¢ Group : ${group.subject}\nâ€¢ descTime : ${anu.descTime}\nâ€¢ descID : ${anu.descId}\nâ€¢ descNew : ${anu.desc}`, MessageType.text, {contextInfo: { mentionedJid: [tag]}})
 		} else if (!anu.restrict == '') {
 			kurr.sendMessage(group.id, `Group Restrict Change\n\nGroup : ${group.subject}\nGroupId : ${anu.jid}\nRestrict : ${anu.restrict}`, MessageType.text)
 			} else if (!anu.announce == '') {
