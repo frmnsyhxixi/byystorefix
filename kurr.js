@@ -1827,9 +1827,7 @@ case 'w' :
         if(!isGroup && !isGroupAdmins)reply(`PESANAN SEDANG DIPROSES MOHON DITUNGGU || *SABAR YA BWANG PROSES DROP*`)
         break
 case 'test':
-             if (!isGroup) return reply(mess.only.group)
-             if (args.length < 1) return reply(`*DAFTAR PRODUK*
-
+             reply(`*DAFTAR PRODUK*
 KETIK :
 *mla* untuk menampilkan list diamond mobile legend paket A
 *mlb* untuk menampilakan list diamond paket B
