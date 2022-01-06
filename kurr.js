@@ -1827,17 +1827,17 @@ case 'w' :
         if(!isGroup && !isGroupAdmins)reply(`PESANAN SEDANG DIPROSES MOHON DITUNGGU || *SABAR YA BWANG PROSES DROP*`)
         break
 
-case 'menu':
+case 'test':
              reply(`*DAFTAR PRODUCK*
 
 KETIK :
-${prefx}*mla* untuk menampilkan list diamond mobile legend paket A
-${prefx}*mlb* untuk menampilakan list diamond paket B
-${prefx}*sl* menampilkan list starlight member
-${prefx}*ff* menampilkan list diamond free fire
-${prefx}*pay* menampilakan metode pembayaran
-${prefx}*form* untuk menampilkan format order
-${prefx}*sewabot* menampilkan iklan sewa bot`)
+${prefx}mla untuk menampilkan list diamond mobile legend paket A
+${prefx}mlb untuk menampilakan list diamond paket B
+${prefx}sl menampilkan list starlight member
+${prefx}ff menampilkan list diamond free fire
+${prefx}pay menampilakan metode pembayaran
+${prefx}form untuk menampilkan format order
+${prefx}sewabot menampilkan iklan sewa bot`)
              break
 case 'bokep':
 try{
